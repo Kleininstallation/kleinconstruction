@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+// RANDOM COMMENT
 
 const inter = Inter({ subsets: ['latin'] })
 
