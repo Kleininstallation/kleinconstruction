@@ -17,6 +17,6 @@ module.exports = {
   basePath: basePath,
   images: {
     loader: 'imgix',
-    path: 'waffletech-4230.imgix.net
+    path: 'waffletech-4230.imgix.net'
   },
 }
