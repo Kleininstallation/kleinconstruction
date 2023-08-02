@@ -2,7 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Nav from './components/Nav';
 import Footer from './components/Footer';
-// RANDOM COMMENT
+// RANDOM COMMENT why stop
 
 const inter = Inter({ subsets: ['latin'] })
 
