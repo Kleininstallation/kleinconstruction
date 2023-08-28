@@ -2,12 +2,14 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { LuMail } from 'react-icons/lu';
+import backgroundimage from './components/photos/images-1.jpg'
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
 
-      <div className="">
+      <div className="backgroundimage">
+        <div className="gradient"></div>
         <h1>YOU GET</h1>
         <h1>WHAT YOU GET</h1>
       </div>
