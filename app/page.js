@@ -7,14 +7,15 @@ import backgroundimage from './components/photos/images-1.jpg'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+            <div className="gradient"></div>
+      <div className="backgroundimage"></div>
+      <div className="backgroundimage grey"></div>
+      <div className="slogan">
+      <h1>YOU <span className="orange-text">GET</span></h1>
+        <h1>WHAT YOU <span className="orange-text">GET</span></h1>
+        </div>
 
-      <div className="backgroundimage">
-        <div className="gradient"></div>
-        <h1>YOU GET</h1>
-        <h1>WHAT YOU GET</h1>
-      </div>
-
-      <div className="">
+      <div className="columns">
         <div className="col-text">
           <h1>PLAN</h1>
           <p>We approach projects with creativity and foresight – Every groundbreaking development begins with a clear path to success. Our collaborative planning process thoroughly examines projects from all perspectives, identifying opportunities for efficiency and proactively anticipating potential challenges.</p>
@@ -29,45 +30,44 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="">
-        <Link href="/design">
-          <div className="image-text-left">
-            <Image src="next.svg" width="500" height="500" alt="Picture of a house" />
+      <div className="columns-container">
+          <div className="image-with-text image-text-left">
+            <Image src="/images/beautiful-house.png" width="1000" height="1000" alt="Picture of a house" />
             <div class='image-text'>
               <h1>DESIGN-BUILD</h1>
               <p>We approach projects with creativity and foresight – Every groundbreaking development begins with a clear path to success. Our collaborative planning process thoroughly examines projects from all perspectives, identifying opportunities for efficiency and proactively anticipating potential challenges.</p>
-              <button>→</button>
+              <Link href="/design"><button className="arrow">→</button></Link>
             </div>
           </div>
-        </Link>
-        <Link href="/cabinets">
-          <div className="image-text-right">
+  
+        
+          <div className="image-with-text image-text-right">
             <div class='image-text'>
                 <h1>CABINETRY</h1>
                 <p>We approach projects with creativity and foresight – Every groundbreaking development begins with a clear path to success. Our collaborative planning process thoroughly examines projects from all perspectives, identifying opportunities for efficiency and proactively anticipating potential challenges.</p>
-                <button>→</button>
+                <Link href="/cabinets"><button className="arrow">→</button></Link>
               </div>
-            <Image src="next.svg" width="500" height="500" alt="Picture of the cabinets" />
+            <Image src="/images/kitchen.png" width="1000" height="1000" alt="Picture of the cabinets" />
           </div>
-        </Link>
-        <Link href="/hvac">
-          <div className="image-text-left">
-              <Image src="next.svg" width="500" height="500" alt="Picture of a house" />
+        
+        
+          <div className="image-with-text image-text-left">
+              <Image src="/images/couch.png" width="1000" height="1000" alt="Picture of a house" />
               <div class='image-text'>
                 <h1>HVAC</h1>
                 <p>We approach projects with creativity and foresight – Every groundbreaking development begins with a clear path to success. Our collaborative planning process thoroughly examines projects from all perspectives, identifying opportunities for efficiency and proactively anticipating potential challenges.</p>
-                <button>→</button>
+                <Link href="/hvac"><button className="arrow">→</button></Link>
               </div>
           </div>
-        </Link>
+        
       </div>
 
       <div className="final-text">
         <h1>Something that is pretty good</h1>
         <p>At our core, we construct with integrity – Building is our passion, and each project is a reflection of our commitment. Taking full ownership and pride in our work, we strive for excellence, constantly aiming to surpass expectations and deliver top-notch projects that are completed on schedule and within budget. At our core, we construct with integrity – Building is our passion, and each project is a reflection of our commitment. Taking full ownership and pride in our work, we strive for excellence, constantly aiming to surpass expectations and deliver top-notch projects that are completed on schedule and within budget.</p>
         <div className="contact-icons">
-          <Link href="tel:454-989-6543"><BsFillTelephoneFill /> <span>(454) 989 - 6543</span></Link>
-          <Link href="mailto:kleinconstruction@gmail.com"><LuMail /> <span>kleinconstruction@gmail.com</span></Link>
+          <Link href="tel:454-989-6543"><BsFillTelephoneFill /> <span>&nbsp;(454) 989 - 6543</span></Link>
+          <Link href="mailto:kleinconstruction@gmail.com"><LuMail /> <span>&nbsp;kleinconstruction@gmail.com</span></Link>
         </div>
       </div>
     </main>

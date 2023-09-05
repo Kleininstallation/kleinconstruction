@@ -5,7 +5,7 @@ const Nav = (props) => {
     return (
         <nav className="nav">
             <div className="logo">
-                <h1>KLEIN Construction</h1>
+                <h1><span className="orange-text">KLEIN</span> Construction</h1>
                 <div className="logo-types">
                     <p>Design-Build</p>
                     <p>HVAC</p>

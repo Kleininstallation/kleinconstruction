@@ -4,11 +4,26 @@
 .logo{
     margin-top:15px;
     margin-left:40px;
-    width:264px;
+    width:265px;
     display:flex;
     flex-direction:column;
     font-size:1.5em;
     letter-spacing:.1em;
+    color:white;
+}
+.orange-text {
+    color: #F19837;
+}
+.slogan{
+    top: -2px;
+    position: absolute;
+    width: 50%;
+    height:50vw;
+    padding-top:200px;
+    padding-left:40px;
+    color:white;
+    font-size:3em;
+    background-color: rgb(6, 6, 6, .4)
 }
 .logo-types{
     display:flex;
@@ -16,10 +31,11 @@
     letter-spacing:normal;
     width:100%;
     justify-content:space-between;
+    color:white;
 }
 .nav{
+    position: relative;
     z-index:2;
-    background-image: linear-gradient(red, yellow);
     display:flex;
     justify-content:space-between;
 }
@@ -28,21 +44,200 @@
     flex-direction:column;
     align-items:flex-end;
     margin-top:18px;
+    color:white;
     margin-right:15px;
 }
 .link{
     margin-left:15px;
 }
 .backgroundimage{
-    z-index:3;
-    background-image:url("./components/photos/images-1.jpg");
+    background-image:url("../public/images/hero.png");
     background-size:cover;
     height:50vw;
+    width: 100%;
     margin-top:-80px;
+    position: relative;
+    border-bottom: 8px solid black;
+}
+.grey {
+    position: absolute;
+    top: 78px;
+    width: 50%;
+    filter: grayscale(100%);
+    z-index: 0;
 }
 .gradient{
-    background-image: linear-gradient(red, yellow);
-    height:46;
+    top: 0;
+    position: absolute;
+    background-image: linear-gradient(rgb(6, 6, 6), rgba(0, 0, 0, 0));
+    height:100px;
     margin-top:-246;
     width:100vw;
+    z-index: 1;
+}
+.col-text h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.col-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+    padding-left:30px;
+    border-right: 3px solid black;
+    line-height: 30px;
+}
+.col-text:nth-child(3) {
+    border-right: none;
+}
+
+.columns {
+    margin: 20px 0;
+    display: flex;
+}
+.columns-container {
+    display: flex;
+    flex-direction: column;
+}
+.image-with-text {
+    display: flex;
+    border-bottom: 7px solid rgb(0, 0, 0);
+}
+.image-text {
+    background:#141414;
+    color: white;
+    padding: 30px;
+    position: relative;
+}
+.image-text h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.arrow {
+    padding: 0px 15px;
+    font-weight: bold;
+    justify-self: flex-end;
+    background:#F19837;
+    color: #1D1D1D;
+    border-radius: 5px;
+    font-size: 30px;
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+}
+
+.final-text {
+    padding: 30px;
+    width: 100%;
+}
+.final-text h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-icons {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+.contact-icons a {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.footer-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 0.75em;
+}
+
+.mini-nav {
+    background: black;
+    color: white;
+    height: 50px;
+    display: flex;
+}
+.mini-nav div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    padding: 0 10px;
+    margin-left: 0;
+    height: 100%;
+    box-sizing: border-box;
+   
+}
+.mini-nav div:hover {
+    border-top: 2px solid white;
+    padding-bottom: 2px;
+}
+.selected-nav {
+    border-top: 2px solid white;
+    padding-bottom: 2px;
+}
+img.backgroundimage {
+    border-bottom: none;
+}
+
+.header-container {
+    display: flex;
+    padding: 20px;
+    padding-left:30px;
+    margin-top:20px;
+    margin-bottom:20px;
+    justify-content: space-between;
+}
+.header-left-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+}
+.header-left-text h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.contact-nav {
+    width: 35%;
+}
+.contact-nav h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: space-between
+}
+.image-gallery-image {
+    position: relative;
+    width: 30vw;
+    height: 25vw;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+}
+h1.see-more{
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.contact-button {
+    margin-top: 20px;
+    border: 2px solid #F19837;
+    color: #F19837;
+    padding: 5px 10px;
+}
+.contact-button:hover{
+    color: #a86620;
+    border: 2px solid #a86620;
 }

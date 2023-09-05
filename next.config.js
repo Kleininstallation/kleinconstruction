@@ -19,6 +19,5 @@ module.exports = {
     loader: 'imgix',
     path: 'waffletech-4230.imgix.net'
   },
-  output: 'export',
-
+  images: { unoptimized: true } 
 }
