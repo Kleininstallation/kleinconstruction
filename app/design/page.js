@@ -12,13 +12,14 @@ export default function Cabinets() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
             <div className="gradient"></div>
-      <Image src="/images/build-hero.jpg" alt="hero" width="500" height="500" className="backgroundimage" />
-      
+      <Image src="/images/construction-hero.jpg" alt="hero" width="500" height="500" className="backgroundimage" />
+      {/*
       <div className="mini-nav">
         <div onClick={() => {setSelected("")}}className={`link ${selected === "" ? 'selected-nav' : ""}`}>ABOUT</div>
         <div onClick={() => {setSelected("image")}}className={`link ${selected === "image" ? 'selected-nav' : ""}`}>IMAGE-GALLERY</div>
         <div onClick={() => {setSelected("contact")}}className={`link ${selected === "contact" ? 'selected-nav' : ""}`}>CONTACT</div>
       </div>
+  */}
 
       {selected === "" &&<> <div className="header-container">
         <div className="header-left-text">
@@ -28,7 +29,8 @@ export default function Cabinets() {
         <div className="contact-nav">
           <h2>Schedule Appointment</h2>
           <p>All estimates and consultations are free.</p>
-          <button className="contact-button">Start Now</button>
+          <Link href="tel:454-989-6543"><h2 className="number">(454) 668 - 7774</h2></Link>
+          {/*<button className="contact-button">Start Now</button>*/}
         </div>
       </div>
 
@@ -36,7 +38,7 @@ export default function Cabinets() {
       <div className="columns-container-service">
           <div className="servicepagesection">
             <div className="image-sizer">
-              <Image src="/images/build-1.jpg" width="1000" height="1000" alt="Picture of a house" />
+              <Image src="/images/con12.jpg" width="1000" height="1000" alt="Picture of a house" />
             </div>
             <div class='image-text-service'>
               <p>Few cabinetry and countertop companies are dedicated to the same quality design and superior customer service as Klein Cabinets. Locally owned and over 20 years of experience, we are fully capable of crafting designs that you will love to have in your home or business.</p>
@@ -47,7 +49,7 @@ export default function Cabinets() {
               <p>At Klein Cabinets  we take our customer’s satisfaction very seriously. We do everything we can to provide you with the highest quality products and craft the designs to fit exactly what you’re looking for, you can expect beautiful creations every time.</p>
             </div>
             <div className="image-sizer">
-              <Image src="/images/build-2.jpg" width="1000" height="1000" alt="Picture of the cabinets" />
+              <Image src="/images/con11.jpg" width="1000" height="1000" alt="Picture of the cabinets" />
             </div>
           </div>
         </div>
@@ -55,16 +57,16 @@ export default function Cabinets() {
 
       </> }
       <div className="final-text">
-        {selected==="" && <h1>Recent Work</h1>}
+        {selected==="" && <h1 >Recent Work</h1>}
         <div className="image-gallery" style={{height: selected==="image" ? "calc(50vw + 20px)" : "25vw"}}>
           <div className="image-gallery-image">
-            <Image src="/images/kitchen.png" layout="fill" alt="Picture of the cabinets" />
+            <Image src="/images/con6.jpg" layout="fill" alt="Picture of the cabinets" />
           </div>
           <div className="image-gallery-image">
-            <Image src="/images/kitchen.png" layout="fill" alt="Picture of the cabinets" />
+            <Image src="/images/con4.jpg" layout="fill" alt="Picture of the cabinets" />
           </div>
           <div className="image-gallery-image">
-            <Image src="/images/kitchen.png" layout="fill" alt="Picture of the cabinets" />
+            <Image src="/images/con5.jpg" layout="fill" alt="Picture of the cabinets" />
           </div>
           {selected ==="image" && <><div className="image-gallery-image">
             <Image src="/images/kitchen.png" layout="fill" alt="Picture of the cabinets" />
@@ -77,7 +79,7 @@ export default function Cabinets() {
           </div></>}
         </div>
         
-        <h1 className="see-more">See more</h1>
+        {/*<h1 className="see-more">See more</h1>*/}
       </div>
 
       {selected==="" && <div className="final-text">
@@ -85,7 +87,8 @@ export default function Cabinets() {
         <div className="contact-nav">
           <h2>Schedule Appointment</h2>
           <p>All estimates and consultations are free.</p>
-          <button className="contact-button">Start Now</button>
+          <Link href="tel:454-989-6543"><h2 className="number">(454) 668 - 7774</h2></Link>
+          {/*<button className="contact-button">Start Now</button>*/}
         </div>
         <div className="header-left-text">
         <h1>Something that is pretty good</h1>
@@ -93,7 +96,7 @@ export default function Cabinets() {
         </div>
         </div>
         <div className="contact-icons">
-          <Link href="tel:454-989-6543"><BsFillTelephoneFill /> <span>&nbsp;(454) 989 - 6543</span></Link>
+          <Link href="tel:454-989-6543"><BsFillTelephoneFill /> <span>&nbsp;(454) 668 - 7774</span></Link>
           <Link href="mailto:kleinconstruction@gmail.com"><LuMail /> <span>&nbsp;kleinconstruction@gmail.com</span></Link>
         </div>
       </div>}

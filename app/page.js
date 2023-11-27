@@ -9,10 +9,9 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
             <div className="gradient"></div>
       <div className="backgroundimage"></div>
-      <div className="backgroundimage grey"></div>
+      {/* <div className="backgroundimage grey"></div> */}
       <div className="slogan">
-      <h1>YOU <span className="orange-text">GET</span></h1>
-        <h1>WHAT YOU <span className="orange-text">GET</span></h1>
+    
         </div>
 
       <div className="columns">
@@ -32,7 +31,7 @@ export default function Home() {
 
       <div className="columns-container">
           <div className="image-with-text image-text-left">
-            <Image src="/images/beautiful-house.png" width="1000" height="1000" alt="Picture of a house" />
+            <Image src="/images/construction-hero.jpg" width="700" height="380" alt="Picture of a house" />
             <div class='image-text'>
               <h1>DESIGN-BUILD</h1>
               <p>We approach projects with creativity and foresight – Every groundbreaking development begins with a clear path to success. Our collaborative planning process thoroughly examines projects from all perspectives, identifying opportunities for efficiency and proactively anticipating potential challenges.</p>
@@ -47,7 +46,7 @@ export default function Home() {
                 <p>We approach projects with creativity and foresight – Every groundbreaking development begins with a clear path to success. Our collaborative planning process thoroughly examines projects from all perspectives, identifying opportunities for efficiency and proactively anticipating potential challenges.</p>
                 <Link href="/cabinets"><button className="arrow">→</button></Link>
               </div>
-            <Image src="/images/kitchen.png" width="1000" height="1000" alt="Picture of the cabinets" />
+            <Image src="/images/cabinets-hero.jpg" width="700" height="380" alt="Picture of the cabinets" />
           </div>
         
         
@@ -63,7 +62,7 @@ export default function Home() {
       </div>
 
       <div className="final-text">
-        <h1>Something that is pretty good</h1>
+        <h1>Higher Quality Work</h1>
         <p>At our core, we construct with integrity – Building is our passion, and each project is a reflection of our commitment. Taking full ownership and pride in our work, we strive for excellence, constantly aiming to surpass expectations and deliver top-notch projects that are completed on schedule and within budget. At our core, we construct with integrity – Building is our passion, and each project is a reflection of our commitment. Taking full ownership and pride in our work, we strive for excellence, constantly aiming to surpass expectations and deliver top-notch projects that are completed on schedule and within budget.</p>
         <div className="contact-icons">
           <Link href="tel:454-989-6543"><BsFillTelephoneFill /> <span>&nbsp;(454) 989 - 6543</span></Link>
