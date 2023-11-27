@@ -40,7 +40,7 @@ export default function Cabinets() {
               <Image class="image" src="/images/hvac8.jpg" width="1000" height="1000" alt="Picture of a house" />
             </div>
             <div class='image-text-service'>
-            <p>For unparalleled excellence in HVAC services, few companies match the dedication to quality and superior customer service that Klein Heating and Air brings to St. George. With over 20 years of local experience and a commitment to top-notch craftsmanship, we have the expertise to deliver HVAC solutions that you'll appreciate for your home or business.</p>            </div>
+            <p>For unparalleled excellence in HVAC services, few companies match the dedication to quality and superior customer service that Klein Heating and Air brings to St. George. With over 20 years of local experience and a commitment to top-notch craftsmanship, we have the expertise to deliver HVAC solutions that you will appreciate for your home or business.</p>            </div>
           </div>
           <div className="servicepagesection">
             <div class='image-text-service'>
