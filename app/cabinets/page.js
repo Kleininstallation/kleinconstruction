@@ -30,7 +30,8 @@ export default function Cabinets() {
         <div className="contact-nav">
           <h2>Schedule Appointment</h2>
           <p>All estimates and consultations are free.</p>
-          <Link href="tel:454-989-6543"><h2 className="number">(702) 378 - 1047</h2></Link>
+          <Link href="tel:702-378-1047"><h2 className="number">(702) 378 - 1047</h2></Link>
+          <Link href="mailto:klein.cabinets.stg@gmail.com"><LuMail /> <span>&nbsp;klein.cabinets.stg@gmail.com</span></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
       </div>
@@ -88,7 +89,8 @@ export default function Cabinets() {
         <div className="contact-nav">
           <h2>Schedule Appointment</h2>
           <p>All estimates and consultations are free.</p>
-          <Link href="tel:454-989-6543"><h2 className="number">(702) 378 - 1047</h2></Link>
+          <Link href="tel:702-378-1047"><h2 className="number">(702) 378 - 1047</h2></Link>
+          <Link href="mailto:klein.cabinets.stg@gmail.com"><LuMail /> <span>&nbsp;klein.cabinets.stg@gmail.com</span></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
         <div className="header-left-text">
@@ -97,7 +99,7 @@ export default function Cabinets() {
         </div>
         </div>
         <div className="contact-icons">
-          <Link href="tel:454-989-6543"><BsFillTelephoneFill /> <span>&nbsp;(702) 378 - 1047</span></Link>
+          <Link href="tel:702-378-1047"><BsFillTelephoneFill /> <span>&nbsp;(702) 378 - 1047</span></Link>
           <Link href="mailto:klein.cabinets.stg@gmail.com"><LuMail /> <span>&nbsp;klein.cabinets.stg@gmail.com</span></Link>
         </div>
       </div>}

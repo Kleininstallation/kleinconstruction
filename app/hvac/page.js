@@ -29,7 +29,7 @@ export default function Cabinets() {
         <div className="contact-nav">
           <h2>Schedule Appointment</h2>
           <p>All estimates and consultations are free.</p>
-          <Link href="tel:454-989-6543"><h2 className="number">(702) 378 - 1047</h2></Link>
+          <Link href="tel:702-378-1047"><h2 className="number">(702) 378 - 1047</h2></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
       </div>
@@ -90,7 +90,7 @@ At Klein Heating and Air in St. George, customer satisfaction is our utmost prio
         <div className="contact-nav">
           <h2>Schedule Appointment</h2>
           <p>All estimates and consultations are free.</p>
-          <Link href="tel:454-989-6543"><h2 className="number">(702) 378 - 1047</h2></Link>
+          <Link href="tel:702-378-1047"><h2 className="number">(702) 378 - 1047</h2></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
         <div className="header-left-text">
@@ -99,7 +99,7 @@ At Klein Heating and Air in St. George, customer satisfaction is our utmost prio
         </div>
         </div>
         <div className="contact-icons">
-          <Link href="tel:454-989-6543"><BsFillTelephoneFill /> <span>&nbsp;(702) 378 - 1047</span></Link>
+          <Link href="tel:702-378-1047"><BsFillTelephoneFill /> <span>&nbsp;(702) 378 - 1047</span></Link>
           <Link href="mailto:kleinconstruction@gmail.com"><LuMail /> <span>&nbsp;kleinconstruction@gmail.com</span></Link>
         </div>
       </div>}
