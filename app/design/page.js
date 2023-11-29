@@ -91,7 +91,7 @@ export default function Cabinets() {
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
         <div className="header-left-text">
-        <h1>Something that is pretty good</h1>
+        <h1>Higher Quality Work</h1>
         <p>At our core, we construct with integrity – Building is our passion, and each project is a reflection of our commitment. Taking full ownership and pride in our work, we strive for excellence, constantly aiming to surpass expectations and deliver top-notch projects that are completed on schedule and within budget.</p>
         </div>
         </div>

@@ -4,7 +4,7 @@
 .logo{
     margin-top:15px;
     margin-left:40px;
-    width:265px;
+    width:270px;
     display:flex;
     flex-direction:column;
     font-size:1.5em;
@@ -82,6 +82,7 @@
 }
 .number{
     margin-top:20px;
+    font-weight:bold;
 }
 .col-text {
     display: flex;
@@ -217,6 +218,27 @@ img.backgroundimage {
     flex-direction:column;
     background-color: rgb(241, 241, 241);
     border-radius:5px;
+}
+.step{
+    font-size:2em;
+    margin-top:20px;
+}
+.steptext{
+    font-size:1.25em;
+    margin-top:15px;
+    margin-bottom:10px!important;
+}
+.stepnumber{
+    margin-top:0px;
+    font-weight:600;
+}
+.stepemail{
+    font-weight:600;
+}
+.stepicons{
+    color:#000000;
+    background-color:white;
+    padding-top:0px;
 }
 .image-text-service{
     width:40vw;

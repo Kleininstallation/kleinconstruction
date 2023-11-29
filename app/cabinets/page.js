@@ -15,11 +15,9 @@ export default function Cabinets() {
       <Image src="/images/cabinets-hero.jpg" width="500" height="500" className="backgroundimage" />
       
       <div className="mini-nav">
-        {/*
         <div onClick={() => {setSelected("")}}className={`link ${selected === "" ? 'selected-nav' : ""}`}>ABOUT</div>
         <div onClick={() => {setSelected("image")}}className={`link ${selected === "image" ? 'selected-nav' : ""}`}>IMAGE-GALLERY</div>
         <div onClick={() => {setSelected("contact")}}className={`link ${selected === "contact" ? 'selected-nav' : ""}`}>CONTACT</div>
-  */}
       </div>
 
       {selected === "" &&<> <div className="header-container">
@@ -31,7 +29,7 @@ export default function Cabinets() {
           <h2>Schedule Appointment</h2>
           <p>All estimates and consultations are free.</p>
           <Link href="tel:702-378-1047"><h2 className="number">(702) 378 - 1047</h2></Link>
-          <Link href="mailto:klein.cabinets.stg@gmail.com"><LuMail /> <span>&nbsp;klein.cabinets.stg@gmail.com</span></Link>
+          <Link href="mailto:klein.cabinets.stg@gmail.com"> <span className="number">klein.cabinets.stg@gmail.com</span></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
       </div>
@@ -59,10 +57,50 @@ export default function Cabinets() {
 
       </> }
       <div className="final-text">
-        {selected==="" && <h1>Recent Work</h1>}
-        <div className="image-gallery" style={{height: selected==="image" ? "calc(50vw + 20px)" : "25vw"}}>
+        {selected==="" && <><h1>Recent Work</h1>
+        <div className="image-gallery">
+        <div className="image-gallery-image">
+            <Image src="/images/cab4.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cabnice2.webp" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab9.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          </div>
+        </>}
+        <div className="image-gallery">
+          {selected ==="image" && <>
+          <div className="image-gallery-image">
+            <Image src="/images/cabnice1.webp" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cabnice2.webp" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cabnice3.webp" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab1.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab2.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab3.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
           <div className="image-gallery-image">
             <Image src="/images/cab4.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab5.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab6.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab7.jpg" layout="fill" alt="Picture of the cabinets" />
           </div>
           <div className="image-gallery-image">
             <Image src="/images/cab8.jpg" layout="fill" alt="Picture of the cabinets" />
@@ -70,19 +108,114 @@ export default function Cabinets() {
           <div className="image-gallery-image">
             <Image src="/images/cab9.jpg" layout="fill" alt="Picture of the cabinets" />
           </div>
-          {selected ==="image" && <><div className="image-gallery-image">
-            <Image src="/images/kitchen.png" layout="fill" alt="Picture of the cabinets" />
+          <div className="image-gallery-image">
+            <Image src="/images/cab10.jpg" layout="fill" alt="Picture of the cabinets" />
           </div>
           <div className="image-gallery-image">
-            <Image src="/images/kitchen.png" layout="fill" alt="Picture of the cabinets" />
+            <Image src="/images/cab11.jpg" layout="fill" alt="Picture of the cabinets" />
           </div>
           <div className="image-gallery-image">
-            <Image src="/images/kitchen.png" layout="fill" alt="Picture of the cabinets" />
-          </div></>}
+            <Image src="/images/cab12.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab13.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab14.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab15.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab16.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab17.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab18.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab19.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab20.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab21.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab22.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab23.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab24.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab25.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab26.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab27.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab28.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab29.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab30.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab31.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab32.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab33.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab34.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab35.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab36.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab37.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab38.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          <div className="image-gallery-image">
+            <Image src="/images/cab39.jpg" layout="fill" alt="Picture of the cabinets" />
+          </div>
+          </>}
         </div>
-        
         {/*<h1 className="see-more">See more</h1>*/}
       </div>
+      {selected ==="contact" && <><div className="final-text">
+            <h2 className="step">Step 1.</h2>
+              <p className="steptext">Call or send us an email (Attach plans or drawings if you have them)</p>
+            <div className="contact-icons stepicons">
+              <Link href="tel:702-378-1047"><BsFillTelephoneFill /> <h2 className="stepnumber">&nbsp;(702) 378 - 1047</h2></Link>
+              <Link href="mailto:klein.cabinets.stg@gmail.com"><LuMail />  <span className="stepemail">&nbsp;klein.cabinets.stg@gmail.com</span></Link>
+            </div>
+            <h2 className="step">Step 2.</h2>
+              <p className="steptext">Our team will reach out/respond within 2 business days</p>
+            <h2 className="step">Step 3.</h2>
+              <p className="steptext">Consultation and field measure</p>
+            <h2 className="step">Step 4.</h2>
+              <p className="steptext">Cabinet Production and Installation 4-6 weeks</p>
+          </div></>}
 
       {selected==="" && <div className="final-text">
       <div className="header-container">
@@ -90,7 +223,7 @@ export default function Cabinets() {
           <h2>Schedule Appointment</h2>
           <p>All estimates and consultations are free.</p>
           <Link href="tel:702-378-1047"><h2 className="number">(702) 378 - 1047</h2></Link>
-          <Link href="mailto:klein.cabinets.stg@gmail.com"><LuMail /> <span>&nbsp;klein.cabinets.stg@gmail.com</span></Link>
+          <Link href="mailto:klein.cabinets.stg@gmail.com"> <span className="number">klein.cabinets.stg@gmail.com</span></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
         <div className="header-left-text">
