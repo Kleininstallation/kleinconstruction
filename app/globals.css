@@ -56,7 +56,7 @@
     background-size:cover;
     height:50vw;
     width: 100%;
-    margin-top:-80px;
+    margin-top:-50px;
     position: relative;
     border-bottom: 8px solid black;
 }
@@ -305,4 +305,104 @@ h1.see-more{
 .contact-button:hover{
     color: #a86620;
     border: 2px solid #a86620;
+}
+
+.hamburger-menu{
+    display:none;
+}
+.slogan{
+    display:none;
+}
+@media only screen and (max-width: 800px) {
+.columns-container-service{
+    flex-direction:column;
+}
+.image-text-service{
+    width:100%;
+}
+.servicepagesection{
+    margin-top:0px;
+}
+.image-sizer{
+    width:100%;
+    height:50%;
+}
+.header-container{
+    flex-direction:column;
+}
+.header-left-text{
+    width:100%;
+    margin-bottom:20px;
+}
+.contact-nav{
+    width:100%;
+}
+.image-with-text{
+    flex-direction:column;
+}
+.image-text{
+    padding-bottom:40px;
+}
+.arrow{
+    bottom:10px;
+}
+.image-text-right{
+    flex-direction:column-reverse;
+}
+.columns{
+    flex-direction:column;
+}
+
+.navigation{
+    display:none;
+}
+
+.hamburger-menu {
+    display:block;
+    position: relative;
+  }
+  
+  .hamburger-icon {
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  
+  .menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -160px;
+    width:200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  .image-gallery-image{
+    width:85vw;
+    height:65vw;
+  }
+  .menu a:hover {
+    background-color: #f5f5f5;
+  }
+  .column{
+    flex-direction:column-reverse;
+  }
+  .hamburger-menu.open .menu {
+    display: block;
+  }
+  .contact-icons{
+    flex-direction:column;
+  }
 }

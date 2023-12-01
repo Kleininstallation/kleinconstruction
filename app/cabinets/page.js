@@ -44,7 +44,7 @@ export default function Cabinets() {
               <p>Few cabinetry companies are dedicated to the same quality design and superior customer service as Klein Cabinets. Locally owned and over 20 years of experience, we are fully capable of crafting designs that you will love to have in your home or business.</p>
             </div>
           </div>
-          <div className="servicepagesection">
+          <div className="servicepagesection column">
             <div class='image-text-service'>
               <p>At Klein Cabinets  we take our customer’s satisfaction very seriously. We do everything we can to provide you with the highest quality products and craft the designs to fit exactly what you’re looking for, you can expect beautiful creations every time.</p>
             </div>
