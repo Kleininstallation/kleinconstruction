@@ -23,11 +23,15 @@ export default function Cabinets() {
 
       {selected === "" &&<> <div className="header-container">
         <div className="header-left-text">
-          <h1>Generations of Craftmanship</h1>
-          <p>We are an HVAC company, Klein Heating and Air, proudly serving the St George, Utah area. As a locally owned and operated business, we have established a strong reputation for our fine craftsmanship and dedication to quality.</p>
+          <h1>Serving the southern Utah area.</h1>
+          <p>Few Heating and Air companies are dedicated to the same quality design and superior
+customer service as Klein Heating and Air. Mini-split systems provide unique opportunities to
+design airflow and comfort in a way that isn’t possible with traditional HVAC, while HVAC offers
+upfront affordability and functional airflow. We’d love to help you figure out which would work
+best for you.</p>
         </div>
         <div className="contact-nav">
-          <h2>Schedule Appointment</h2>
+          <h2>Get Started</h2>
           <p>All estimates and consultations are free.</p>
           <Link href="tel:702-378-1047"><h2 className="number">(702) 378 - 1047</h2></Link>
           {/*<button className="contact-button">Start Now</button>*/}
@@ -40,17 +44,10 @@ export default function Cabinets() {
               <Image class="image" src="/images/hvac8.jpg" width="1000" height="1000" alt="Picture of a house" />
             </div>
             <div class='image-text-service'>
-            <p>For unparalleled excellence in HVAC services, few companies match the dedication to quality and superior customer service that Klein Heating and Air brings to St. George. With over 20 years of local experience and a commitment to top-notch craftsmanship, we have the expertise to deliver HVAC solutions that you will appreciate for your home or business.</p>            </div>
+              <p>We specialize in Ductless mini-split systems. With products like Gree, Carrier, or Mitsubishi we
+are confident we can find a solution that meets your needs and budget.</p>
           </div>
-          <div className="servicepagesection">
-            <div class='image-text-service'>
-              <p>
-At Klein Heating and Air in St. George, customer satisfaction is our utmost priority. We go above and beyond to ensure that you receive top-tier products and meticulously crafted designs tailored to your specifications. Count on us for consistently delivering stunning HVAC solutions that meet and exceed your expectations.</p>
-            </div>
-            <div className="image-sizer">
-              <Image src="/images/hvac7.jpg" width="1000" height="1000" alt="Picture of the cabinets" />
-            </div>
-          </div>
+        </div>
         </div>
 
 
@@ -88,14 +85,15 @@ At Klein Heating and Air in St. George, customer satisfaction is our utmost prio
       {selected==="" && <div className="final-text">
       <div className="header-container">
         <div className="contact-nav">
-          <h2>Schedule Appointment</h2>
+          <h2>Get Started</h2>
           <p>All estimates and consultations are free.</p>
           <Link href="tel:702-378-1047"><h2 className="number">(702) 378 - 1047</h2></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
         <div className="header-left-text">
-        <h1>Higher Quality Work</h1>
-        <p>At our core, we construct with integrity – Building is our passion, and each project is a reflection of our commitment. Taking full ownership and pride in our work, we strive for excellence, constantly aiming to surpass expectations and deliver top-notch projects that are completed on schedule and within budget.</p>
+          <p>At Klein Heating and Air we know customer satisfaction is what businesses are built on, which is
+why we take it so seriously. We do everything we can to provide you with the highest quality
+services and products to fit seamlessly in your home and everyday life.</p>
         </div>
         </div>
         <div className="contact-icons">

@@ -241,12 +241,26 @@ img.backgroundimage {
     padding-top:0px;
 }
 .image-text-service{
-    width:40vw;
+    width:90vw;
     padding:25px;
 }
+.contactbutton{
+    cursor:pointer;
+    background-color:#de8d35;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:200px;
+    height:30px;
+    border-radius:5px;
+}
+.contactbutton:hover{
+    background-color:#c47a2a;
+}
 .image-sizer{
-    width:40vw;
-    height:20vw;
+    width:90vw;
+    height:45vw;
     display:flex;
     background-size: cover;
     background-position: center;

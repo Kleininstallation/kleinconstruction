@@ -23,11 +23,12 @@ export default function Cabinets() {
 
       {selected === "" &&<> <div className="header-container">
         <div className="header-left-text">
-          <h1>Generations of Craftmanship</h1>
-          <p>We are a locally owned and operated custom cabinet manufacturer, located in the heart of Salt Lake City, Utah. With a long tradition of fine craftsmanship, Millcreek Cabinet is a well recognized and respected name in the local industry.</p>
+          <h1>Serving the southern Utah area.</h1>
+          <p>From vision→design→build. We would be happy to be there with you from beginning to end.
+Contact us for a free estimate.</p>
         </div>
         <div className="contact-nav">
-          <h2>Schedule Appointment</h2>
+          <h2>Get Started</h2>
           <p>All estimates and consultations are free.</p>
           <Link href="tel:454-989-6543"><h2 className="number">(454) 668 - 7774</h2></Link>
           {/*<button className="contact-button">Start Now</button>*/}
@@ -38,20 +39,16 @@ export default function Cabinets() {
       <div className="columns-container-service">
           <div className="servicepagesection">
             <div className="image-sizer">
-              <Image src="/images/con12.jpg" width="1000" height="1000" alt="Picture of a house" />
+              <Image src="/images/con12.jpg" width="2000" height="2000" alt="Picture of a house" />
             </div>
             <div class='image-text-service'>
-              <p>Few cabinetry and countertop companies are dedicated to the same quality design and superior customer service as Klein Cabinets. Locally owned and over 20 years of experience, we are fully capable of crafting designs that you will love to have in your home or business.</p>
+              <p>At Klein Construction we know customer satisfaction is what businesses are built on, which is
+why we take it so seriously. We do everything we can to provide you with the highest quality
+products, designs, and craftsmanship to fit exactly what you’re looking for. With us, you can
+expect satisfaction every time.</p>
             </div>
           </div>
-          <div className="servicepagesection">
-            <div class='image-text-service'>
-              <p>At Klein Cabinets  we take our customer’s satisfaction very seriously. We do everything we can to provide you with the highest quality products and craft the designs to fit exactly what you’re looking for, you can expect beautiful creations every time.</p>
-            </div>
-            <div className="image-sizer">
-              <Image src="/images/con11.jpg" width="1000" height="1000" alt="Picture of the cabinets" />
-            </div>
-          </div>
+          
         </div>
 
 
@@ -85,18 +82,19 @@ export default function Cabinets() {
       {selected==="" && <div className="final-text">
       <div className="header-container">
         <div className="contact-nav">
-          <h2>Schedule Appointment</h2>
+          <h2>Get Started</h2>
           <p>All estimates and consultations are free.</p>
-          <Link href="tel:454-989-6543"><h2 className="number">(454) 668 - 7774</h2></Link>
+          <Link href="tel:435-668-7774"><h2 className="number">(454) 668 - 7774</h2></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
         <div className="header-left-text">
-        <h1>Higher Quality Work</h1>
-        <p>At our core, we construct with integrity – Building is our passion, and each project is a reflection of our commitment. Taking full ownership and pride in our work, we strive for excellence, constantly aiming to surpass expectations and deliver top-notch projects that are completed on schedule and within budget.</p>
+        <p>Few construction companies are dedicated to the same quality design and superior customer
+service as Klein Cabinets. We care about the quality and class of our builds, and we care about
+your experience throughout the building process.</p>
         </div>
         </div>
         <div className="contact-icons">
-          <Link href="tel:454-989-6543"><BsFillTelephoneFill /> <span>&nbsp;(454) 668 - 7774</span></Link>
+          <Link href="tel:435-668-7774"><BsFillTelephoneFill /> <span>&nbsp;(435) 668 - 7774</span></Link>
           <Link href="mailto:kleinconstruction@gmail.com"><LuMail /> <span>&nbsp;kleinconstruction@gmail.com</span></Link>
         </div>
       </div>}

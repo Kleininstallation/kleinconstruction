@@ -22,11 +22,13 @@ export default function Cabinets() {
 
       {selected === "" &&<> <div className="header-container">
         <div className="header-left-text">
-          <h1>Generations of Craftmanship</h1>
-          <p>We are a locally owned and operated custom cabinet manufacturer, located in the heart of St George City, Utah. With a long tradition of fine craftsmanship, Klein Cabinets is a well recognized and respected name in the local industry.</p>
+          <h1>Serving the southern Utah area.</h1>
+          <p>We pride ourselves in knowing cabinets inside and out and being the best installers in the south.
+Family and locally owned with over 70 years of combined experience, our quality products,
+designs and installs are ones you will love to have in your home or business.</p>
         </div>
         <div className="contact-nav">
-          <h2>Schedule Appointment</h2>
+          <h2 className="contactbutton" onClick={() => {setSelected("contact")}}>Get Started</h2>
           <p>All estimates and consultations are free.</p>
           <Link href="tel:702-378-1047"><h2 className="number">(702) 378 - 1047</h2></Link>
           <Link href="mailto:klein.cabinets.stg@gmail.com"> <span className="number">klein.cabinets.stg@gmail.com</span></Link>
@@ -41,17 +43,13 @@ export default function Cabinets() {
               <Image src="/images/hero.jpg" width="1000" height="1000" alt="Picture of a house" />
             </div>
             <div class='image-text-service'>
-              <p>Few cabinetry companies are dedicated to the same quality design and superior customer service as Klein Cabinets. Locally owned and over 20 years of experience, we are fully capable of crafting designs that you will love to have in your home or business.</p>
+              <p>At Klein Cabinets we know customer satisfaction is what businesses are built on, which is why
+we take it so seriously. We do everything we can to provide you with the highest quality
+products, designs, and installation to fit exactly what you’re looking for. With us, you can expect
+satisfaction every time</p>
             </div>
           </div>
-          <div className="servicepagesection column">
-            <div class='image-text-service'>
-              <p>At Klein Cabinets  we take our customer’s satisfaction very seriously. We do everything we can to provide you with the highest quality products and craft the designs to fit exactly what you’re looking for, you can expect beautiful creations every time.</p>
-            </div>
-            <div className="image-sizer">
-              <Image src="/images/cab3.jpg" width="1000" height="1000" alt="Picture of the cabinets" />
-            </div>
-          </div>
+          
         </div>
 
 
@@ -220,15 +218,16 @@ export default function Cabinets() {
       {selected==="" && <div className="final-text">
       <div className="header-container">
         <div className="contact-nav">
-          <h2>Schedule Appointment</h2>
+          <h2 ClassName="contactbutton" onClick={() => {setSelected("contact")}}>Get Started</h2>
           <p>All estimates and consultations are free.</p>
           <Link href="tel:702-378-1047"><h2 className="number">(702) 378 - 1047</h2></Link>
           <Link href="mailto:klein.cabinets.stg@gmail.com"> <span className="number">klein.cabinets.stg@gmail.com</span></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
         <div className="header-left-text">
-        <h1>Higher Quality Work</h1>
-        <p>At our core, we construct with integrity – Building is our passion, and each project is a reflection of our commitment. Taking full ownership and pride in our work, we strive for excellence, constantly aiming to surpass expectations and deliver top-notch projects that are completed on schedule and within budget.</p>
+          <p>Few cabinetry companies are dedicated to the same quality design and superior customer
+service as Klein Cabinets. We would love to work with you on getting the cabinets and design
+you are looking for.</p>
         </div>
         </div>
         <div className="contact-icons">
