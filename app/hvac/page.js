@@ -98,7 +98,7 @@ services and products to fit seamlessly in your home and everyday life.</p>
         </div>
         <div className="contact-icons">
           <Link href="tel:702-378-1047"><BsFillTelephoneFill /> <span>&nbsp;(702) 378 - 1047</span></Link>
-          <Link href="mailto:kleinconstruction@gmail.com"><LuMail /> <span>&nbsp;kleinconstruction@gmail.com</span></Link>
+          <Link href="mailto:klein.heatingandair.stg@gmail.com"><LuMail /> <span>&nbsp;klein.heatingandair.stg@gmail.com</span></Link>
         </div>
       </div>}
     </main>

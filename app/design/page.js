@@ -95,7 +95,7 @@ your experience throughout the building process.</p>
         </div>
         <div className="contact-icons">
           <Link href="tel:435-668-7774"><BsFillTelephoneFill /> <span>&nbsp;(435) 668 - 7774</span></Link>
-          <Link href="mailto:kleinconstruction@gmail.com"><LuMail /> <span>&nbsp;kleinconstruction@gmail.com</span></Link>
+          <Link href="mailto:klein.construction.stg@gmail.com"><LuMail /> <span>&nbsp;klein.construction.stg@gmail.com</span></Link>
         </div>
       </div>}
     </main>
