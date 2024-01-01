@@ -30,7 +30,7 @@ Contact us for a free estimate.</p>
         <div className="contact-nav">
           <h2>Get Started</h2>
           <p>All estimates and consultations are free.</p>
-          <Link href="tel:454-989-6543"><h2 className="number">(454) 668 - 7774</h2></Link>
+          <Link href="tel:435-668-7774"><h2 className="number">(435) 668 - 7774</h2></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
       </div>
@@ -84,7 +84,7 @@ expect satisfaction every time.</p>
         <div className="contact-nav">
           <h2>Get Started</h2>
           <p>All estimates and consultations are free.</p>
-          <Link href="tel:435-668-7774"><h2 className="number">(454) 668 - 7774</h2></Link>
+          <Link href="tel:435-668-7774"><h2 className="number">(435) 668 - 7774</h2></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
         <div className="header-left-text">
