@@ -85,7 +85,7 @@ that is what you are looking for.</p>
         <h1>Contact Us</h1>
         <p>Contact us today for a free quote for construction, HVAC, or cabinets</p>
         <div className="contact-icons">
-          <Link href="tel:435-668-7774"><BsFillTelephoneFill /> <span>&nbsp;(435) 668 - 7774</span></Link>
+          <Link href="tel:435-327-1616"><BsFillTelephoneFill /> <span>&nbsp;(435) 327 - 1616</span></Link>
           <Link href="mailto:klein.construction.stg@gmail.com"><LuMail /> <span>&nbsp;klein.construction.stg@gmail.com</span></Link>
         </div>
       </div>

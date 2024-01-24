@@ -33,7 +33,7 @@ best for you.</p>
         <div className="contact-nav">
           <h2>Get Started</h2>
           <p>All estimates and consultations are free.</p>
-          <Link href="tel:702-378-1047"><h2 className="number">(702) 378 - 1047</h2></Link>
+          <Link href="tel:435-327-1616"><h2 className="number">(435) 327 - 1616</h2></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
       </div>
@@ -87,7 +87,7 @@ are confident we can find a solution that meets your needs and budget.</p>
         <div className="contact-nav">
           <h2>Get Started</h2>
           <p>All estimates and consultations are free.</p>
-          <Link href="tel:702-378-1047"><h2 className="number">(702) 378 - 1047</h2></Link>
+          <Link href="tel:435-327-1616"><h2 className="number">(435) 327 - 1616</h2></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
         <div className="header-left-text">
@@ -97,7 +97,7 @@ services and products to fit seamlessly in your home and everyday life.</p>
         </div>
         </div>
         <div className="contact-icons">
-          <Link href="tel:702-378-1047"><BsFillTelephoneFill /> <span>&nbsp;(702) 378 - 1047</span></Link>
+          <Link href="tel:435-327-1616"><BsFillTelephoneFill /> <span>&nbsp;(435) 327 - 1616</span></Link>
           <Link href="mailto:klein.heatingandair.stg@gmail.com"><LuMail /> <span>&nbsp;klein.heatingandair.stg@gmail.com</span></Link>
         </div>
       </div>}

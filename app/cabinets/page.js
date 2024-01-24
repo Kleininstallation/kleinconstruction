@@ -30,7 +30,7 @@ designs and installs are ones you will love to have in your home or business.</p
         <div className="contact-nav">
           <h2 className="contactbutton" onClick={() => {setSelected("contact")}}>Get Started</h2>
           <p>All estimates and consultations are free.</p>
-          <Link href="tel:702-378-1047"><h2 className="number">(702) 378 - 1047</h2></Link>
+          <Link href="tel:435-327-1616"><h2 className="number">(435) 327 - 1616</h2></Link>
           <Link href="mailto:klein.cabinets.stg@gmail.com"> <span className="number">klein.cabinets.stg@gmail.com</span></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
@@ -204,7 +204,7 @@ satisfaction every time</p>
             <h2 className="step">Step 1.</h2>
               <p className="steptext">Call or send us an email (Attach plans or drawings if you have them)</p>
             <div className="contact-icons stepicons">
-              <Link href="tel:702-378-1047"><BsFillTelephoneFill /> <h2 className="stepnumber">&nbsp;(702) 378 - 1047</h2></Link>
+              <Link href="tel:435-327-1616"><BsFillTelephoneFill /> <h2 className="stepnumber">&nbsp;(435) 327 - 1616</h2></Link>
               <Link href="mailto:klein.cabinets.stg@gmail.com"><LuMail />  <span className="stepemail">&nbsp;klein.cabinets.stg@gmail.com</span></Link>
             </div>
             <h2 className="step">Step 2.</h2>
@@ -220,7 +220,7 @@ satisfaction every time</p>
         <div className="contact-nav">
           <h2 ClassName="contactbutton" onClick={() => {setSelected("contact")}}>Get Started</h2>
           <p>All estimates and consultations are free.</p>
-          <Link href="tel:702-378-1047"><h2 className="number">(702) 378 - 1047</h2></Link>
+          <Link href="tel:435-327-1616"><h2 className="number">(435) 327 - 1616</h2></Link>
           <Link href="mailto:klein.cabinets.stg@gmail.com"> <span className="number">klein.cabinets.stg@gmail.com</span></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
@@ -231,7 +231,7 @@ you are looking for.</p>
         </div>
         </div>
         <div className="contact-icons">
-          <Link href="tel:702-378-1047"><BsFillTelephoneFill /> <span>&nbsp;(702) 378 - 1047</span></Link>
+          <Link href="tel:435-327-1616"><BsFillTelephoneFill /> <span>&nbsp;(435) 327 - 1616</span></Link>
           <Link href="mailto:klein.cabinets.stg@gmail.com"><LuMail /> <span>&nbsp;klein.cabinets.stg@gmail.com</span></Link>
         </div>
       </div>}
