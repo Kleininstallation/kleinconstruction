@@ -30,7 +30,7 @@ Contact us for a free estimate.</p>
         <div className="contact-nav">
           <h2>Get Started</h2>
           <p>All estimates and consultations are free.</p>
-          <Link href="tel:435-327-1616"><h2 className="number">(435) 327 - 1616</h2></Link>
+          <Link href="tel:435-668-7774"><h2 className="number">(435) 668 - 7774</h2></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
       </div>
@@ -84,7 +84,7 @@ expect satisfaction every time.</p>
         <div className="contact-nav">
           <h2>Get Started</h2>
           <p>All estimates and consultations are free.</p>
-          <Link href="tel:435-327-1616"><h2 className="number">(435) 327 - 1616</h2></Link>
+          <Link href="tel:435-668-7774"><h2 className="number">(435) 668 - 7774</h2></Link>
           {/*<button className="contact-button">Start Now</button>*/}
         </div>
         <div className="header-left-text">
@@ -94,7 +94,7 @@ your experience throughout the building process.</p>
         </div>
         </div>
         <div className="contact-icons">
-          <Link href="tel:435-327-1616"><BsFillTelephoneFill /> <span>&nbsp;(435) 327 - 1616</span></Link>
+          <Link href="tel:435-668-7774"><BsFillTelephoneFill /> <span>&nbsp;(435) 668 - 7774</span></Link>
           <Link href="mailto:klein.construction.stg@gmail.com"><LuMail /> <span>&nbsp;klein.construction.stg@gmail.com</span></Link>
         </div>
       </div>}
