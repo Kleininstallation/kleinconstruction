@@ -13,7 +13,6 @@ const Nav = (props) => {
     return (
         <nav className="nav">
             <div className="logo">
-                <h1><span className="orange-text">KLEIN</span> {page}</h1>
             </div>
             <div className="nav-links">
                  <div className={`hamburger-menu ${menuOpen ? 'open' : ''}`}>

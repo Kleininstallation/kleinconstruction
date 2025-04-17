@@ -2,29 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 .logo{
-    margin-top:15px;
     margin-left:40px;
-    width:270px;
-    display:flex;
-    flex-direction:column;
-    font-size:1.5em;
-    letter-spacing:.1em;
-    color:white;
+    height:45px;
+    width:190px;
+    margin-top:3px;
+    background-size:cover;
 }
 .orange-text {
     color: #F19837;
 }
 .slogan{
-    top: -2px;
-    position: absolute;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
     width: 100%;
-    height:50vw;
-    margin-top:-35px;
-    padding-top:280px;
+    height:100%;
     padding-left:40px;
     color:white;
+    font-size:4em;
+    font-weight:700;
+}
+#getStarted{
+    font-size:.5em;
+    border-radius:5px;
+    border:2px solid white;
+    width:300px;
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+#getStarted:hover{
+    cursor:pointer;
+    background-color:rgba(255, 255, 255, 0.1);
+}
+#getStarted:active{
+    background-color:red;
+}
+#help{
     font-size:3em;
-    background-color: rgb(6, 6, 6, .4);
+    text-align:center;
+    color:white;
+    background-color:black;
+    padding-top:30px;
+    padding-bottom:30px;
 }
 .logo-types{
     display:flex;
@@ -39,14 +59,16 @@
     z-index:2;
     display:flex;
     justify-content:space-between;
+    align-items:center;
+    background-color:rgb(240, 240, 240);
+    height:70px;
 }
 .nav-links{
     display:flex;
     flex-direction:column;
     align-items:flex-end;
-    margin-top:18px;
-    color:white;
-    margin-right:15px;
+    color:rgb(42, 42, 42);
+    margin-right:30px;
 }
 .link{
     margin-left:15px;
@@ -58,7 +80,26 @@
     width: 100%;
     margin-top:-50px;
     position: relative;
-    border-bottom: 8px solid black;
+}
+
+.logo{
+    background-image:url("../public/images/logo.png");
+}
+#long-image{
+    background-image:url("../public/images/beautiful-house.png");
+    background-size:cover;
+    background-position:center;
+    height:27vw;
+    width:58.75vw;
+    margin-left:4.75vw;
+}
+#short-image{
+    background-image:url("../public/images/cabnice1.webp");
+    background-size:cover;
+    background-position:center;
+    height:27vw;
+    width:27vw;
+    margin-left:4.75vw;
 }
 .grey {
     position: absolute;
@@ -85,21 +126,86 @@
     font-weight:bold;
 }
 .col-text {
+    color: white;
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 20px;
-    padding-left:30px;
-    border-right: 3px solid black;
+    padding: 30px;
+    background-color:#0b0b0b;
+    width:27vw;
+    height:27vw;
+    border:1px solid rgb(43, 43, 43);
+    margin-left:4.75vw;
     line-height: 30px;
+}
+.col-text h1{
+    color: rgb(151, 117, 91);
+    font-weight:500;
+    font-size:2em;
 }
 .col-text:nth-child(3) {
     border-right: none;
 }
+.perks{
+    margin-top:50px;
+    display:flex;
+}
+.perkBox{
+    display:flex;
+    flex-direction:column;
+    width:27vw;
+    height:27vw;
+    margin-left:4.75vw;
+}
+.perkBox h3{
+    margin-top:20px;
+    margin-bottom:20px;
+    font-size:1.5em;
+}
+.perkbox p{
+    color:#141414;
+}
 
+.info{
+    width:40vw;
+}
+.half{
+    width:50%
+}
+.type{
+    border:2px solid black;
+    border-radius:3px;
+    padding:5px;
+    width:40%;
+    margin:5%;
+    margin-left:0;
+}
+.contactForm{
+    display:flex;
+    width:90vw;
+    margin-left:5vw;
+    border:3px solid black;
+    border-radius:10px;
+    padding:50px;
+}
+#contact{
+    font-size:2em;
+}
+.form{
+    display:flex;
+    flex-wrap:wrap;
+    width:40vw;
+}
+.btmlnk{
+    display:flex;
+    height:20px;
+    align-items:center;
+    margin-top:15px;
+}
 .columns {
-    margin: 20px 0;
+    padding-bottom: 50px;
     display: flex;
+    background-color:black;
 }
 .columns-container {
     display: flex;
@@ -325,7 +431,7 @@ h1.see-more{
     display:none;
 }
 .slogan{
-    display:none;
+    color:white;
 }
 @media only screen and (max-width: 800px) {
 .columns-container-service{
