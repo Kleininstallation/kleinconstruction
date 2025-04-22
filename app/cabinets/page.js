@@ -12,7 +12,7 @@ export default function Cabinets() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
             <div className="gradient"></div>
-      <Image src="/images/cabinets-hero.jpg" width="500" height="500" className="backgroundimage" />
+      <Image src="/images/cabinets-hero.jpg" width="500" height="500" className="backgroundimage" al='image'/>
       
       <div className="mini-nav">
         <div onClick={() => {setSelected("")}}className={`link ${selected === "" ? 'selected-nav' : ""}`}>ABOUT</div>
