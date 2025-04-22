@@ -30,15 +30,15 @@ export default function Home() {
           </div>
         <div className="col-text">
           <h1>Add-ons</h1>
-          <p> Enhance your home with custom add-ons that bring more function, style, and value. 
+          <p> {`Enhance your home with custom add-ons that bring more function, style, and value. 
             Whether it’s an extra room, expanded patio, or modern upgrades, the right additions 
-            can transform your space to better fit your lifestyle and needs.</p>
+            can transform your space to better fit your lifestyle and needs.`}</p>
         </div>
         <div className="col-text">
           <h1>Remodels</h1>
-          <p>Breathe new life into your space with a custom remodel. Whether it’s a kitchen refresh, 
+          <p>{`Breathe new life into your space with a custom remodel. Whether it’s a kitchen refresh, 
             bathroom upgrade, or full-home transformation, remodeling gives you the chance to modernize,
-            personalize, and make your home truly yours.</p>
+            personalize, and make your home truly yours.`}</p>
         </div>
       </div>
       <div className='columns'>
@@ -53,9 +53,9 @@ export default function Home() {
           </div>
           <div className='perkBox'>
             <h3>Build with your plan</h3>
-            <p>Already have the perfect design in mind? We’ll bring it to life. Whether it's a 
+            <p>{`Already have the perfect design in mind? We’ll bring it to life. Whether it's a 
               full set of blueprints or a custom concept, our team works with your plans to
-               create the home you’ve been dreaming of—just the way you envisioned it.</p>
+               create the home you’ve been dreaming of—just the way you envisioned it.`}</p>
           </div>
           <div className='perkBox'>
             <h3>Great Communication</h3>
@@ -70,10 +70,10 @@ export default function Home() {
           </div>
           <div className="column">
             <h2>What people are saying</h2>
-            <div id='long-textbox'>"I highly recommend Klein construction! They’ve done several jobs for us, some big and some small,
+            <div id='long-textbox'>{`"I highly recommend Klein construction! They’ve done several jobs for us, some big and some small,
               but all our experiences have been very professional, efficient, and quality. They’re also good with communication, and
               you know exactly what to expect. We’ve experienced our share of bad contractors, so I’m so happy to have found someone
-              we can trust!!"</div>
+              we can trust!!"`}</div>
           </div>
         </div>
 
