@@ -94,13 +94,13 @@ export default function Home() {
               <input className='half type2' type="text" id="lname" name="lname" placeholder="+1 (435) 000-0000"></input>
               <p className='full'>What services are you looking for?</p>
               <input type="radio" id="html" name="fav_language" value="HTML"></input>
-              <label className="margin-right" for="html">New Build</label>
+              <p className="margin-right" for="html">New Build</p>
               <input type="radio" id="html" name="fav_language" value="HTML"></input>
-              <label className="margin-right" for="html">Remodel</label>
+              <p className="margin-right" for="html">Remodel</p>
               <input type="radio" id="html" name="fav_language" value="HTML"></input>
-              <label className="margin-right" for="html">Add-on</label>
+              <p className="margin-right" for="html">Add-on</p>
               <input type="radio" id="html" name="fav_language" value="HTML"></input>
-              <label className="margin-right" for="html">Other</label>
+              <p className="margin-right" for="html">Other</p>
               <p className='full'>How can we help?</p>
               <textarea className='full' id="text-area" name="w3review">
               </textarea>
