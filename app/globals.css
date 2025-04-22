@@ -35,9 +35,6 @@
     cursor:pointer;
     background-color:rgba(255, 255, 255, 0.1);
 }
-#getStarted:active{
-    background-color:red;
-}
 #help{
     font-size:3em;
     text-align:center;
@@ -93,8 +90,24 @@
     width:58.75vw;
     margin-left:4.75vw;
 }
+#long-textbox{
+    display:flex;
+    align-items:center;
+    font-size:1.5em;
+    height:27vw;
+    width:58.75vw;
+    margin-left:4.75vw;
+}
 #short-image{
     background-image:url("../public/images/cabnice1.webp");
+    background-size:cover;
+    background-position:center;
+    height:27vw;
+    width:27vw;
+    margin-left:4.75vw;
+}
+#short-image-owners{
+    background-image:url("../public/images/owners.png");
     background-size:cover;
     background-position:center;
     height:27vw;
@@ -149,12 +162,12 @@
 .perks{
     margin-top:50px;
     display:flex;
+    margin-bottom:50px;
 }
 .perkBox{
     display:flex;
     flex-direction:column;
     width:27vw;
-    height:27vw;
     margin-left:4.75vw;
 }
 .perkBox h3{
@@ -176,9 +189,46 @@
     border:2px solid black;
     border-radius:3px;
     padding:5px;
-    width:40%;
-    margin:5%;
+    width:45%;
+    margin:10px;
+    margin-right:5%;
     margin-left:0;
+}
+.type2{
+    border:2px solid black;
+    border-radius:3px;
+    padding:5px;
+    width:50%;
+    margin:10px;
+    margin-right:0;
+    margin-left:0;
+}
+.full{
+    width:100%;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+#text-area{
+    border:2px solid black;
+    height:100px;
+    padding:8px;
+}
+.submit-button{
+    background-color:rgb(151, 117, 91);
+    width:45%;
+    margin-left:55%;
+    margin-top:30px;
+    padding:10px;
+    color:white;
+    border-radius:5px;
+    text-align:center;
+}
+.submit-button:hover{
+    cursor:pointer;
+    background-color:rgb(109, 84, 65);
+}
+.margin-right{
+    margin-right:20px;
 }
 .contactForm{
     display:flex;
@@ -206,6 +256,17 @@
     padding-bottom: 50px;
     display: flex;
     background-color:black;
+}
+.column h2{
+    font-size:2em;
+    margin-top:30px;
+    margin-bottom:15px;
+    margin-left:4.75vw;
+}
+.columns-white {
+    padding-bottom: 50px;
+    display: flex;
+    background-color:rgb(255, 255, 255);
 }
 .columns-container {
     display: flex;

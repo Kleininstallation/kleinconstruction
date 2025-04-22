@@ -52,14 +52,28 @@ export default function Home() {
                Allowance items are yours to control.</p>
           </div>
           <div className='perkBox'>
-            <h3>Full Cost Disclosure</h3>
-            <p>You will know what every trade is going to cost before the build process starts.
-               Allowance items are yours to control.</p>
+            <h3>Build with your plan</h3>
+            <p>Already have the perfect design in mind? We’ll bring it to life. Whether it's a 
+              full set of blueprints or a custom concept, our team works with your plans to
+               create the home you’ve been dreaming of—just the way you envisioned it.</p>
           </div>
           <div className='perkBox'>
-            <h3>Full Cost Disclosure</h3>
-            <p>You will know what every trade is going to cost before the build process starts.
-               Allowance items are yours to control.</p>
+            <h3>Great Communication</h3>
+            <p>From the first meeting to the final walkthrough, we keep you informed and
+               involved. Clear, consistent communication means no surprises—just confidence, peace of mind, and a smoother building experience.</p>
+          </div>
+        </div>
+        <div className='columns-white'>
+          <div className="column">
+            <h2>The Owners</h2>
+            <div id='short-image-owners'></div>
+          </div>
+          <div className="column">
+            <h2>What people are saying</h2>
+            <div id='long-textbox'>"I highly recommend Klein construction! They’ve done several jobs for us, some big and some small,
+              but all our experiences have been very professional, efficient, and quality. They’re also good with communication, and
+              you know exactly what to expect. We’ve experienced our share of bad contractors, so I’m so happy to have found someone
+              we can trust!!"</div>
           </div>
         </div>
 
@@ -73,23 +87,24 @@ export default function Home() {
               <p className='half'>First Name</p>
               <p className='half'>Last Name</p>
               <input className='half type' type="text" id="fname" name="fname" placeholder="First Name"></input>
-              <input className='half type' type="text" id="lname" name="lname" placeholder="Last Name"></input>
+              <input className='half type2' type="text" id="lname" name="lname" placeholder="Last Name"></input>
               <p className='half'>Email</p>
               <p className='half'>Phone Number</p>
               <input className='half type' type="text" id="fname" name="fname" placeholder="Email"></input>
-              <input className='half type' type="text" id="lname" name="lname" placeholder="+1 (435) 000-0000"></input>
+              <input className='half type2' type="text" id="lname" name="lname" placeholder="+1 (435) 000-0000"></input>
               <p className='full'>What services are you looking for?</p>
               <input type="radio" id="html" name="fav_language" value="HTML"></input>
-              <label for="html">New Build</label>
+              <label className="margin-right" for="html">New Build</label>
               <input type="radio" id="html" name="fav_language" value="HTML"></input>
-              <label for="html">Remodel</label>
+              <label className="margin-right" for="html">Remodel</label>
               <input type="radio" id="html" name="fav_language" value="HTML"></input>
-              <label for="html">Add-on</label>
+              <label className="margin-right" for="html">Add-on</label>
               <input type="radio" id="html" name="fav_language" value="HTML"></input>
-              <label for="html">Other</label>
+              <label className="margin-right" for="html">Other</label>
               <p className='full'>How can we help?</p>
-              <textarea id="w3review" name="w3review">
+              <textarea className='full' id="text-area" name="w3review">
               </textarea>
+              <div className="submit-button">Submit</div>
           </div>
         </div>
     </main>
