@@ -70,6 +70,11 @@
 .link{
     margin-left:15px;
 }
+.Thanks{
+    width:100%;
+    margin-top:50px;
+    text-align:center;
+}
 .backgroundimage{
     background-image:url("../public/images/hero.jpg");
     background-size:cover;
@@ -86,33 +91,33 @@
     background-image:url("../public/images/beautiful-house.png");
     background-size:cover;
     background-position:center;
-    height:27vw;
-    width:58.75vw;
-    margin-left:4.75vw;
+    height:28vw;
+    width:60vw;
+    margin-left:4vw;
 }
 #long-textbox{
     display:flex;
     align-items:center;
     font-size:1.5em;
-    height:27vw;
-    width:58.75vw;
-    margin-left:4.75vw;
+    height:28vw;
+    width:60vw;
+    margin-left:4vw;
 }
 #short-image{
     background-image:url("../public/images/cabnice1.webp");
     background-size:cover;
     background-position:center;
-    height:27vw;
-    width:27vw;
-    margin-left:4.75vw;
+    height:28vw;
+    width:28vw;
+    margin-left:4vw;
 }
 #short-image-owners{
     background-image:url("../public/images/owners.png");
     background-size:cover;
     background-position:center;
-    height:27vw;
-    width:27vw;
-    margin-left:4.75vw;
+    height:28vw;
+    width:28vw;
+    margin-left:4vw;
 }
 .grey {
     position: absolute;
@@ -143,13 +148,13 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 30px;
+    padding: 20px;
     background-color:#0b0b0b;
-    width:27vw;
-    height:27vw;
+    width:28vw;
+    height:28vw;
     border:1px solid rgb(43, 43, 43);
-    margin-left:4.75vw;
-    line-height: 30px;
+    margin-left:4vw;
+    line-height: 22px;
 }
 .col-text h1{
     color: rgb(151, 117, 91);
@@ -167,8 +172,8 @@
 .perkBox{
     display:flex;
     flex-direction:column;
-    width:27vw;
-    margin-left:4.75vw;
+    width:28vw;
+    margin-left:4vw;
 }
 .perkBox h3{
     margin-top:20px;
@@ -261,7 +266,7 @@
     font-size:2em;
     margin-top:30px;
     margin-bottom:15px;
-    margin-left:4.75vw;
+    margin-left:4vw;
 }
 .columns-white {
     padding-bottom: 50px;
@@ -494,9 +499,103 @@ h1.see-more{
 .slogan{
     color:white;
 }
+@media only screen and (max-width: 1000px) {
+    .columns{
+        flex-direction:column;
+        align-items:center;
+    }
+    .col-text{
+        width:90vw;
+        margin-bottom:30px;
+        margin-left:0;
+        height:auto;
+        padding-bottom:30px;
+    }
+    #short-image{
+        display:none;
+    }
+    #long-image{
+        width:90%;
+        margin-left:0;
+        margin-top:-20px;
+        height:35vw;
+    }
+    .perks{
+        flex-direction:column;
+    }
+    .perkBox{
+        width:90%;
+        margin-left:5%;
+    }
+    .columns-white{
+        flex-direction:column;
+        align-items:center;
+        height:auto;
+    }
+    .column h2{
+        text-align:center;
+        margin:0;
+        margin-bottom:20px;
+    }
+    #short-image-owners{
+        width:300px;
+        height:300px;
+        margin:0;
+        margin-bottom:30px;
+    }
+    .column{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        height:auto;
+        width:90vw;
+    }
+    #long-textbox{
+        height:auto;
+        width:100%;
+    }
+    .contactForm{
+        flex-direction:column;
+        align-items:center;
+    }
+    .info{
+        width:100%;
+        margin-bottom:30px;
+    }
+    .form{
+        width:100%;
+    }
+    .submit-button{
+        width:100%;
+        margin-left:0;
+    }
+    .backgroundimage{
+        height:60vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 800px) {
+.contactForm{
+    width:100vw;
+    margin-left:0;
+    border:none;
+}
 .columns-container-service{
     flex-direction:column;
+}
+.backgroundimage{
+    height:80vw;
 }
 .image-text-service{
     width:100%;
@@ -557,8 +656,8 @@ h1.see-more{
   .menu {
     display: none;
     position: absolute;
-    top: 40px;
-    left: -160px;
+    top: 51px;
+    left: -145px;
     width:200px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -577,13 +676,32 @@ h1.see-more{
   .menu a:hover {
     background-color: #f5f5f5;
   }
-  .column{
-    flex-direction:column-reverse;
-  }
   .hamburger-menu.open .menu {
     display: block;
   }
   .contact-icons{
     flex-direction:column;
   }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .backgroundimage{
+        height:100vw;
+    }
+    .slogan{
+        font-size:3em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .backgroundimage{
+        height:120vw;
+    }
+    .slogan{
+        font-size:2.5em;
+    }
+    #getStarted{
+        width:200px;
+    }
 }

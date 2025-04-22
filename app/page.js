@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link';
+import Contact from './components/Contact'
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { LuMail } from 'react-icons/lu';
 import backgroundimage from './components/photos/images-1.jpg'
@@ -13,7 +15,7 @@ export default function Home() {
             NEW BUILDS<br></br>
             ADD-ONS<br></br>
             REMODELS<br></br>
-            <div id="getStarted">GET STARTED</div>
+            <Link href="#first-section" id="getStarted">GET STARTED</Link>
         </div>
       </div>
       {/* <div className="backgroundimage grey"></div> */}
@@ -83,29 +85,8 @@ export default function Home() {
           <Link className='btmlnk' href="tel:435-668-7774"><BsFillTelephoneFill /> <span>&nbsp;(435) 668 - 7774</span></Link>
           <Link className='btmlnk' href="mailto:klein.construction.stg@gmail.com"><LuMail /> <span>&nbsp;klein.construction.stg@gmail.com</span></Link>
           </div>
-          <div className='form'>
-              <p className='half'>First Name</p>
-              <p className='half'>Last Name</p>
-              <input className='half type' type="text" id="fname" name="fname" placeholder="First Name"></input>
-              <input className='half type2' type="text" id="lname" name="lname" placeholder="Last Name"></input>
-              <p className='half'>Email</p>
-              <p className='half'>Phone Number</p>
-              <input className='half type' type="text" id="fname" name="fname" placeholder="Email"></input>
-              <input className='half type2' type="text" id="lname" name="lname" placeholder="+1 (435) 000-0000"></input>
-              <p className='full'>What services are you looking for?</p>
-              <input type="radio" id="html" name="fav_language" value="HTML"></input>
-              <p className="margin-right" for="html">New Build</p>
-              <input type="radio" id="html" name="fav_language" value="HTML"></input>
-              <p className="margin-right" for="html">Remodel</p>
-              <input type="radio" id="html" name="fav_language" value="HTML"></input>
-              <p className="margin-right" for="html">Add-on</p>
-              <input type="radio" id="html" name="fav_language" value="HTML"></input>
-              <p className="margin-right" for="html">Other</p>
-              <p className='full'>How can we help?</p>
-              <textarea className='full' id="text-area" name="w3review">
-              </textarea>
-              <div className="submit-button">Submit</div>
-          </div>
+          <Contact/>
+          
         </div>
     </main>
   )
