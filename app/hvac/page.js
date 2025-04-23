@@ -14,7 +14,7 @@ export default function Cabinets() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="background-video-container">
-          <video autoPlay muted loop className="background-video">
+          <video autoPlay muted loop playsInline className="background-video">
             <source src="/images/herovideo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
