@@ -4,237 +4,93 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { LuMail } from 'react-icons/lu';
+import Contact from '../components/Contact';
+
 
 export default function Cabinets() {
 
   const [selected, setSelected] = useState("");
-
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <div className="gradient"></div>
-      <Image src="/images/cabinets-hero.jpg" width="500" height="500" className="backgroundimage" al='image'/>
-      
-      <div className="mini-nav">
-        <div onClick={() => {setSelected("")}}className={`link ${selected === "" ? 'selected-nav' : ""}`}>ABOUT</div>
-        <div onClick={() => {setSelected("image")}}className={`link ${selected === "image" ? 'selected-nav' : ""}`}>IMAGE-GALLERY</div>
-        <div onClick={() => {setSelected("contact")}}className={`link ${selected === "contact" ? 'selected-nav' : ""}`}>CONTACT</div>
-      </div>
-
-      {selected === "" &&<> <div className="header-container">
-        <div className="header-left-text">
-          <h1>Serving the southern Utah area.</h1>
-          <p>We pride ourselves in knowing cabinets inside and out and being the best installers in the south.
-Family and locally owned with over 70 years of combined experience, our quality products,
-designs and installs are ones you will love to have in your home or business.</p>
+    return (
+      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+              <div className="gradient"></div>
+        <div className="backgroundimage">
+        <div className="slogan">
+              NEW BUILDS<br></br>
+              ADD-ONS<br></br>
+              REMODELS<br></br>
+              <Link href="#first-section" id="getStarted">GET STARTED</Link>
+          </div>
         </div>
-        <div className="contact-nav">
-          <h2 className="contactbutton" onClick={() => {setSelected("contact")}}>Get Started</h2>
-          <p>All estimates and consultations are free.</p>
-          <Link href="tel:435-668-7774"><h2 className="number">(435) 668 - 7774</h2></Link>
-          <Link href="mailto:klein.cabinets.stg@gmail.com"> <span className="number">klein.cabinets.stg@gmail.com</span></Link>
-          {/*<button className="contact-button">Start Now</button>*/}
-        </div>
-      </div>
-
-
-        <div className="columns-container-service">
-          <div className="servicepagesection">
-            <div className="image-sizer">
-              <Image src="/images/hero.jpg" width="1000" height="1000" alt="Picture of a house" />
+        {/* <div className="backgroundimage grey"></div> */}
+        
+        <h1 id='help'>WE CAN HELP</h1>
+        <div className="columns">
+        
+          <div className="col-text">
+            <h1>New Builds</h1>
+            <p>Enjoy the comfort and efficiency of a brand-new home, tailored to your style and needs. 
+              These homes offer open layouts, smart features, and the latest in energy-saving design. 
+              Casitas offer added flexibility—ideal for guests, rentals, home offices, or multigenerational living.
+            </p>
             </div>
-            <div class='image-text-service'>
-              <p>At Klein Cabinets we know customer satisfaction is what businesses are built on, which is why
-we take it so seriously. We do everything we can to provide you with the highest quality
-products, designs, and installation to fit exactly what you’re looking for. With us, you can expect
-satisfaction every time</p>
+          <div className="col-text">
+            <h1>Add-ons</h1>
+            <p> {`Enhance your home with custom add-ons that bring more function, style, and value. 
+              Whether it’s an extra room, expanded patio, or modern upgrades, the right additions 
+              can transform your space to better fit your lifestyle and needs.`}</p>
+          </div>
+          <div className="col-text">
+            <h1>Remodels</h1>
+            <p>{`Breathe new life into your space with a custom remodel. Whether it’s a kitchen refresh, 
+              bathroom upgrade, or full-home transformation, remodeling gives you the chance to modernize,
+              personalize, and make your home truly yours.`}</p>
+          </div>
+        </div>
+        <div className='columns'>
+            <div id='long-image'></div>
+            <div id='short-image'></div>
+          </div>
+          <div className='perks'>
+            <div className='perkBox'>
+              <h3>Full Cost Disclosure</h3>
+              <p>You will know what every trade is going to cost before the build process starts.
+                 Allowance items are yours to control.</p>
+            </div>
+            <div className='perkBox'>
+              <h3>Build with your plan</h3>
+              <p>{`Already have the perfect design in mind? We’ll bring it to life. Whether it's a 
+                full set of blueprints or a custom concept, our team works with your plans to
+                 create the home you’ve been dreaming of—just the way you envisioned it.`}</p>
+            </div>
+            <div className='perkBox'>
+              <h3>Great Communication</h3>
+              <p>From the first meeting to the final walkthrough, we keep you informed and
+                 involved. Clear, consistent communication means no surprises—just confidence, peace of mind, and a smoother building experience.</p>
             </div>
           </div>
-          
-        </div>
-
-
-      </> }
-      <div className="final-text">
-        {selected==="" && <><h1>Recent Work</h1>
-        <div className="image-gallery">
-        <div className="image-gallery-image">
-            <Image src="/images/cab4.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cabnice2.webp" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab9.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          </div>
-        </>}
-        <div className="image-gallery">
-          {selected ==="image" && <>
-          <div className="image-gallery-image">
-            <Image src="/images/cabnice1.webp" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cabnice2.webp" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cabnice3.webp" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab1.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab2.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab3.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab4.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab5.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab6.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab7.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab8.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab9.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab10.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab11.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab12.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab13.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab14.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab15.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab16.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab17.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab18.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab19.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab20.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab21.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab22.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab23.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab24.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab25.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab26.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab27.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab28.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab29.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab30.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab31.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab32.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab33.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab34.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab35.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab36.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab37.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab38.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/cab39.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          </>}
-        </div>
-        {/*<h1 className="see-more">See more</h1>*/}
-      </div>
-      {selected ==="contact" && <><div className="final-text">
-            <h2 className="step">Step 1.</h2>
-              <p className="steptext">Call or send us an email (Attach plans or drawings if you have them)</p>
-            <div className="contact-icons stepicons">
-              <Link href="tel:435-668-7774"><BsFillTelephoneFill /> <h2 className="stepnumber">&nbsp;(435) 668 - 7774</h2></Link>
-              <Link href="mailto:klein.cabinets.stg@gmail.com"><LuMail />  <span className="stepemail">&nbsp;klein.cabinets.stg@gmail.com</span></Link>
+          <div className='columns-white'>
+            <div className="column">
+              <h2>The Owners</h2>
+              <div id='short-image-owners'></div>
             </div>
-            <h2 className="step">Step 2.</h2>
-              <p className="steptext">Our team will reach out/respond within 2 business days</p>
-            <h2 className="step">Step 3.</h2>
-              <p className="steptext">Consultation and field measure</p>
-            <h2 className="step">Step 4.</h2>
-              <p className="steptext">Cabinet Production and Installation 4-6 weeks</p>
-          </div></>}
-
-      {selected==="" && <div className="final-text">
-      <div className="header-container">
-        <div className="contact-nav">
-          <h2 ClassName="contactbutton" onClick={() => {setSelected("contact")}}>Get Started</h2>
-          <p>All estimates and consultations are free.</p>
-          <Link href="tel:435-668-7774"><h2 className="number">(435) 668 - 7774</h2></Link>
-          <Link href="mailto:klein.cabinets.stg@gmail.com"> <span className="number">klein.cabinets.stg@gmail.com</span></Link>
-          {/*<button className="contact-button">Start Now</button>*/}
-        </div>
-        <div className="header-left-text">
-          <p>Few cabinetry companies are dedicated to the same quality design and superior customer
-service as Klein Cabinets. We would love to work with you on getting the cabinets and design
-you are looking for.</p>
-        </div>
-        </div>
-        <div className="contact-icons">
-          <Link href="tel:435-668-7774"><BsFillTelephoneFill /> <span>&nbsp;(435) 668 - 7774</span></Link>
-          <Link href="mailto:klein.cabinets.stg@gmail.com"><LuMail /> <span>&nbsp;klein.cabinets.stg@gmail.com</span></Link>
-        </div>
-      </div>}
-    </main>
-  )
+            <div className="column">
+              <h2>What people are saying</h2>
+              <div id='long-textbox'>{`"I highly recommend Klein construction! They’ve done several jobs for us, some big and some small,
+                but all our experiences have been very professional, efficient, and quality. They’re also good with communication, and
+                you know exactly what to expect. We’ve experienced our share of bad contractors, so I’m so happy to have found someone
+                we can trust!!"`}</div>
+            </div>
+          </div>
+  
+          <div className='contactForm'>
+            <div className='info'>
+              <h3 id='contact'>Contact Us</h3>
+            <Link className='btmlnk' href="tel:435-668-7774"><BsFillTelephoneFill /> <span>&nbsp;(435) 668 - 7774</span></Link>
+            <Link className='btmlnk' href="mailto:klein.construction.stg@gmail.com"><LuMail /> <span>&nbsp;klein.construction.stg@gmail.com</span></Link>
+            </div>
+            <Contact/>
+            
+          </div>
+      </main>
+    )
 }

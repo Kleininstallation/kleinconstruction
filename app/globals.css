@@ -76,8 +76,10 @@
     text-align:center;
 }
 .backgroundimage{
+    display:none;
     background-image:url("../public/images/hero.jpg");
     background-size:cover;
+    background-position:center;
     height:50vw;
     width: 100%;
     margin-top:-50px;
@@ -128,13 +130,24 @@
 }
 .gradient{
     top: 0;
+    margin-top:70px;
     position: absolute;
-    background-image: linear-gradient(rgb(6, 6, 6), rgba(0, 0, 0, 0));
-    height:100px;
-    margin-top:-246;
+    background-image: linear-gradient(to right, rgba(6, 6, 6, 0.4), rgba(6, 6, 6, 0.0));
+    height:50vw;
     width:100vw;
-    z-index: 1;
 }
+.background-video-container {
+    width: 100vw;
+    height: 50vw;
+    overflow: hidden;
+  }
+  
+  .background-video {
+    width: 100vw;
+    height: 50vw;
+    object-fit: cover;
+    object-position:center;
+  }
 .col-text h1 {
     font-size: 1.5em;
     margin-bottom: 10px;
