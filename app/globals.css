@@ -610,6 +610,15 @@ h1.see-more{
 .backgroundimage{
     height:80vw;
 }
+.background-video-container {
+    height: 80vw;
+  }
+.gradient{
+    height:80vw;
+}
+  .background-video {
+    height: 80vw;
+  }
 .image-text-service{
     width:100%;
 }
@@ -702,6 +711,15 @@ h1.see-more{
     .backgroundimage{
         height:100vw;
     }
+    .background-video-container {
+        height: 100vw;
+      }
+    .gradient{
+        height:100vw;
+    }
+      .background-video {
+        height: 100vw;
+      }
     .slogan{
         font-size:3em;
     }
@@ -711,6 +729,15 @@ h1.see-more{
     .backgroundimage{
         height:120vw;
     }
+    .background-video-container {
+        height: 120vw;
+      }
+    .gradient{
+        height:120vw;
+    }
+      .background-video {
+        height: 120vw;
+      }
     .slogan{
         font-size:2.5em;
     }

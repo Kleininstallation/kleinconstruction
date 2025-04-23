@@ -12,16 +12,24 @@ export default function Cabinets() {
   const [selected, setSelected] = useState("");
     return (
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
-              <div className="gradient"></div>
-        <div className="backgroundimage">
-        <div className="slogan">
-              NEW BUILDS<br></br>
-              ADD-ONS<br></br>
-              REMODELS<br></br>
-              <Link href="#first-section" id="getStarted">GET STARTED</Link>
+      <div className="background-video-container">
+          <video autoPlay muted loop playsInline className="background-video">
+            <source src="/images/herovideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="gradient">
+          <div className="slogan">
+            NEW BUILDS<br></br>
+            ADD-ONS<br></br>
+            REMODELS<br></br>
+            <Link href="#first-section" id="getStarted">GET STARTED</Link>
           </div>
         </div>
-        {/* <div className="backgroundimage grey"></div> */}
+      </div>
+      <div className="backgroundimage">
+        
+      </div>
+      {/* <div className="backgroundimage grey"></div> */}
         
         <h1 id='help'>WE CAN HELP</h1>
         <div className="columns">
