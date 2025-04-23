@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { LuMail } from 'react-icons/lu';
-import video from '/images/couch.png';
 
 export default function Cabinets() {
 
