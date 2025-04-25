@@ -5,6 +5,7 @@ import Contact from './components/Contact'
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { LuMail } from 'react-icons/lu';
 import backgroundimage from './components/photos/images-1.jpg'
+import TestimonialSlider from './components/TestimonialSlider';
 
 export default function Home() {
   return (
@@ -23,9 +24,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="backgroundimage">
-        
-      </div>
+      {/* <div className="backgroundimage">
+        <div className="gradient">
+          <div className="slogan">
+            NEW BUILDS<br></br>
+            ADD-ONS<br></br>
+            REMODELS<br></br>
+            <Link href="#first-section" id="getStarted">GET STARTED</Link>
+          </div>
+        </div>
+      </div> */}
       {/* <div className="backgroundimage grey"></div> */}
       
       <h1 id='help'>WE CAN HELP</h1>
@@ -52,8 +60,8 @@ export default function Home() {
         </div>
       </div>
       <div className='columns'>
-          <div id='long-image'></div>
-          <div id='short-image'></div>
+          <div className='long-image'></div>
+          <div className='short-image'></div>
         </div>
         <div className='perks'>
           <div className='perkBox'>
@@ -80,10 +88,7 @@ export default function Home() {
           </div>
           <div className="column">
             <h2>What people are saying</h2>
-            <div id='long-textbox'>{`"I highly recommend Klein construction! They’ve done several jobs for us, some big and some small,
-              but all our experiences have been very professional, efficient, and quality. They’re also good with communication, and
-              you know exactly what to expect. We’ve experienced our share of bad contractors, so I’m so happy to have found someone
-              we can trust!!"`}</div>
+              <TestimonialSlider/>
           </div>
         </div>
 

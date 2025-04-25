@@ -5,14 +5,16 @@ import Link from 'next/link';
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { LuMail } from 'react-icons/lu';
 import Contact from '../components/Contact';
+import TestimonialSlider from '../components/TestimonialSlider';
 
 
 export default function Cabinets() {
 
   const [selected, setSelected] = useState("");
-    return (
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="background-video-container">
+
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      {/*<div className="background-video-container">
           <video autoPlay muted loop playsInline className="background-video">
             <source src="/images/herovideo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -25,80 +27,86 @@ export default function Cabinets() {
             <Link href="#first-section" id="getStarted">GET STARTED</Link>
           </div>
         </div>
-      </div>
-      <div className="backgroundimage">
-        
-      </div>
-      {/* <div className="backgroundimage grey"></div> */}
-        
-        <h1 id='help'>WE CAN HELP</h1>
-        <div className="columns">
-        
-          <div className="col-text">
-            <h1>New Builds</h1>
-            <p>Enjoy the comfort and efficiency of a brand-new home, tailored to your style and needs. 
-              These homes offer open layouts, smart features, and the latest in energy-saving design. 
-              Casitas offer added flexibility—ideal for guests, rentals, home offices, or multigenerational living.
-            </p>
-            </div>
-          <div className="col-text">
-            <h1>Add-ons</h1>
-            <p> {`Enhance your home with custom add-ons that bring more function, style, and value. 
-              Whether it’s an extra room, expanded patio, or modern upgrades, the right additions 
-              can transform your space to better fit your lifestyle and needs.`}</p>
-          </div>
-          <div className="col-text">
-            <h1>Remodels</h1>
-            <p>{`Breathe new life into your space with a custom remodel. Whether it’s a kitchen refresh, 
-              bathroom upgrade, or full-home transformation, remodeling gives you the chance to modernize,
-              personalize, and make your home truly yours.`}</p>
+      </div>*/}
+      <div className="backgroundimage" id="cabinethero">
+      <div className="gradient" id="gradient">
+          <div className="slogan">
+            DESIGN<br></br>
+            BUILD<br></br>
+            INSTALL<br></br>
+            <Link href="#first-section" id="getStarted">GET STARTED</Link>
           </div>
         </div>
-        <div className='columns'>
-            <div id='long-image'></div>
-            <div id='short-image'></div>
+      </div>
+      {/* <div className="backgroundimage grey"></div> */}
+      
+      <h1 id='help'>WE CAN HELP</h1>
+      <div className="columns">
+      
+        <div className="col-text">
+          <h1>Design</h1>
+          <p>{`Our cabinet designs are as unique as your space. We work with you to create a
+           custom design that fits your style, needs, and budget—ensuring your cabinets look
+            great and function perfectly in your home.`}
+          </p>
           </div>
-          <div className='perks'>
-            <div className='perkBox'>
-              <h3>Full Cost Disclosure</h3>
-              <p>You will know what every trade is going to cost before the build process starts.
-                 Allowance items are yours to control.</p>
-            </div>
-            <div className='perkBox'>
-              <h3>Build with your plan</h3>
-              <p>{`Already have the perfect design in mind? We’ll bring it to life. Whether it's a 
-                full set of blueprints or a custom concept, our team works with your plans to
-                 create the home you’ve been dreaming of—just the way you envisioned it.`}</p>
-            </div>
-            <div className='perkBox'>
-              <h3>Great Communication</h3>
-              <p>From the first meeting to the final walkthrough, we keep you informed and
-                 involved. Clear, consistent communication means no surprises—just confidence, peace of mind, and a smoother building experience.</p>
-            </div>
+        <div className="col-text">
+          <h1>Build</h1>
+          <p> {`We offer durable, stylish prefab cabinets that are ready when you are. 
+          With a variety of finishes and configurations, our cabinets combine quality 
+          materials with convenience—giving you a polished look without the wait.`}</p>
+        </div>
+        <div className="col-text">
+          <h1>Install</h1>
+          <p>{`Our team ensures seamless, professional cabinet installation,
+           paying attention to every detail for a perfect fit. We handle all aspects of the installation process, 
+          leaving you with beautifully finished cabinets that are ready to use.`}</p>
+        </div>
+      </div>
+      <div className='columns'>
+          <div className='long-image' id='cabinet-long'></div>
+          <div className='short-image' id='cabinet-short'></div>
+        </div>
+        <div className='perks'>
+        <div className='perkBox'>
+            <h3>Good Communication</h3>
+            <p>{`We prioritize clear communication to keep you informed throughout your cabinet project.
+             From design to installation, we ensure you understand your options, timelines,
+              and costs—delivering reliable service every step of the way.`}</p>
           </div>
-          <div className='columns-white'>
-            <div className="column">
-              <h2>The Owners</h2>
-              <div id='short-image-owners'></div>
-            </div>
-            <div className="column">
-              <h2>What people are saying</h2>
-              <div id='long-textbox'>{`"I highly recommend Klein construction! They’ve done several jobs for us, some big and some small,
-                but all our experiences have been very professional, efficient, and quality. They’re also good with communication, and
-                you know exactly what to expect. We’ve experienced our share of bad contractors, so I’m so happy to have found someone
-                we can trust!!"`}</div>
-            </div>
+          <div className='perkBox'>
+            <h3>No Hidden Fees</h3>
+            <p>{`With us, you won’t find any hidden fees. We believe in transparent pricing for
+             your cabinet needs, so you can trust that you're getting the best value with no
+              surprises—just honest, upfront costs.`}</p>
           </div>
-  
-          <div className='contactForm'>
-            <div className='info'>
-              <h3 id='contact'>Contact Us</h3>
-            <Link className='btmlnk' href="tel:435-668-7774"><BsFillTelephoneFill /> <span>&nbsp;(435) 668 - 7774</span></Link>
-            <Link className='btmlnk' href="mailto:klein.construction.stg@gmail.com"><LuMail /> <span>&nbsp;klein.construction.stg@gmail.com</span></Link>
-            </div>
-            <Contact/>
-            
+          <div className='perkBox'>
+            <h3>Timely Service</h3>
+            <p>{`We value your time. That's why we ensure timely, efficient cabinet service,
+             completing your project on schedule. Whether it's installation or custom work,
+              we arrive on time and get the job done quickly and professionally.`}</p>
           </div>
-      </main>
-    )
+        </div>
+        <div className='columns-white'>
+          <div className="column">
+            <h2>The Owners</h2>
+            <div id='short-image-owners'></div>
+          </div>
+          <div className="column">
+            <h2>What people are saying</h2>
+              <TestimonialSlider/>
+          </div>
+        </div>
+
+        <div className='contactForm'>
+          <div className='info'>
+            <h3 id='contact'>Contact Us</h3>
+          <Link className='btmlnk' href="tel:435-668-7774"><BsFillTelephoneFill /> <span>&nbsp;(435) 668 - 7774</span></Link>
+          <Link className='btmlnk' href="mailto:klein.construction.stg@gmail.com"><LuMail /> <span>&nbsp;klein.construction.stg@gmail.com</span></Link>
+          </div>
+          <Contact/>
+          
+        </div>
+    </main>
+  )
 }

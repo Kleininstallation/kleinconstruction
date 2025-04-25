@@ -76,26 +76,39 @@
     text-align:center;
 }
 .backgroundimage{
-    display:none;
     background-image:url("../public/images/hero.jpg");
     background-size:cover;
     background-position:center;
     height:50vw;
     width: 100%;
-    margin-top:-50px;
     position: relative;
+}
+#hvachero{
+    background-image:url("../public/images/hvac-hero.jpg");
+}
+#cabinethero{
+    background-image:url("../public/images/cabinets-hero.jpg");
+}
+#gradient{
+    margin-top:0;
 }
 
 .logo{
     background-image:url("../public/images/kleinconstruction.png");
 }
-#long-image{
-    background-image:url("../public/images/beautiful-house.png");
+.long-image{
+    background-image:url("../public/images/spechome.webp");
     background-size:cover;
     background-position:center;
     height:28vw;
     width:60vw;
     margin-left:4vw;
+}
+#hvac-long{
+    background-image:url("../public/images/hvac3.jpg");
+}
+#cabinet-long{
+    background-image:url("../public/images/cabnice2.webp");
 }
 #long-textbox{
     display:flex;
@@ -105,13 +118,48 @@
     width:60vw;
     margin-left:4vw;
 }
-#short-image{
-    background-image:url("../public/images/cabnice1.webp");
+.testimonial-slider{
+    width:68vw;
+    padding:4vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.testimonial-slider button{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(219, 219, 219, 0.7);
+    color:rgba(38, 38, 38, 0.7);
+    padding:15px;
+}
+.testimonial-slider button:hover{
+    background-color:rgba(219, 219, 219, 0.9);
+    color:rgba(0, 0, 0, 0.9);
+}
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+    margin-left:4vw;
+    margin-right:4vw;
+    width:60vw;
+}
+.short-image{
+    background-image:url("../public/images/cab30.jpg");
     background-size:cover;
     background-position:center;
     height:28vw;
     width:28vw;
     margin-left:4vw;
+}
+#hvac-short{
+    background-image:url("../public/images/hvac7.jpg");
+}
+#cabinet-short{
+    background-image:url("../public/images/cab37.jpg");
 }
 #short-image-owners{
     background-image:url("../public/images/owners.png");
@@ -513,6 +561,18 @@ h1.see-more{
     color:white;
 }
 @media only screen and (max-width: 1000px) {
+    .testimonial-slider{
+        width:100vw;
+        height:auto;
+    }
+    .buttons{
+        width:100%;
+    }
+    .testimonial{
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    
     .columns{
         flex-direction:column;
         align-items:center;
@@ -524,10 +584,10 @@ h1.see-more{
         height:auto;
         padding-bottom:30px;
     }
-    #short-image{
+    .short-image{
         display:none;
     }
-    #long-image{
+    .long-image{
         width:90%;
         margin-left:0;
         margin-top:-20px;
@@ -585,7 +645,15 @@ h1.see-more{
     .backgroundimage{
         height:60vw;
     }
-
+    .background-video-container {
+        height: 60vw;
+      }
+    .gradient{
+        height:60vw;
+    }
+      .background-video {
+        height: 60vw;
+      }
 }
 
 
@@ -726,18 +794,7 @@ h1.see-more{
 }
 
 @media only screen and (max-width: 480px) {
-    .backgroundimage{
-        height:120vw;
-    }
-    .background-video-container {
-        height: 120vw;
-      }
-    .gradient{
-        height:120vw;
-    }
-      .background-video {
-        height: 120vw;
-      }
+   
     .slogan{
         font-size:2.5em;
     }
