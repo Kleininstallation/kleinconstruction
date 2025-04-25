@@ -1,103 +1,106 @@
-"use client";
-import { useState } from 'react';
+'use client'
 import Image from 'next/image'
 import Link from 'next/link';
+import Contact from '../components/Contact'
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { LuMail } from 'react-icons/lu';
+import backgroundimage from '../components/photos/images-1.jpg'
+import TestimonialSlider from '../components/TestimonialSlider';
 
-export default function Cabinets() {
-
-  const [selected, setSelected] = useState("");
-
+export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <div className="gradient"></div>
-      <Image src="/images/construction-hero.jpg" alt="hero" width="500" height="500" className="backgroundimage" />
-      {/*
-      <div className="mini-nav">
-        <div onClick={() => {setSelected("")}}className={`link ${selected === "" ? 'selected-nav' : ""}`}>ABOUT</div>
-        <div onClick={() => {setSelected("image")}}className={`link ${selected === "image" ? 'selected-nav' : ""}`}>IMAGE-GALLERY</div>
-        <div onClick={() => {setSelected("contact")}}className={`link ${selected === "contact" ? 'selected-nav' : ""}`}>CONTACT</div>
-      </div>
-  */}
-
-      {selected === "" &&<> <div className="header-container">
-        <div className="header-left-text">
-          <h1>Serving the southern Utah area.</h1>
-          <p>From vision→design→build. We would be happy to be there with you from beginning to end.
-Contact us for a free estimate.</p>
-        </div>
-        <div className="contact-nav">
-          <h2>Get Started</h2>
-          <p>All estimates and consultations are free.</p>
-          <Link href="tel:435-668-7774"><h2 className="number">(435) 668 - 7774</h2></Link>
-          {/*<button className="contact-button">Start Now</button>*/}
-        </div>
-      </div>
-
-      
-      <div className="columns-container-service">
-          <div className="servicepagesection">
-            <div className="image-sizer">
-              <Image src="/images/con12.jpg" width="2000" height="2000" alt="Picture of a house" />
-            </div>
-            <div class='image-text-service'>
-              <p>At Klein Construction we know customer satisfaction is what businesses are built on, which is
-why we take it so seriously. We do everything we can to provide you with the highest quality
-products, designs, and craftsmanship to fit exactly what you’re looking for. With us, you can
-expect satisfaction every time.</p>
-            </div>
+      <div className="background-video-container">
+          <video autoPlay muted loop playsInline className="background-video">
+            <source src="/images/herovideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="gradient">
+          <div className="slogan">
+            NEW BUILDS<br></br>
+            ADD-ONS<br></br>
+            REMODELS<br></br>
+            <Link href="#first-section" id="getStarted">GET STARTED</Link>
           </div>
+        </div>
+      </div>
+      {/* <div className="backgroundimage">
+        <div className="gradient">
+          <div className="slogan">
+            NEW BUILDS<br></br>
+            ADD-ONS<br></br>
+            REMODELS<br></br>
+            <Link href="#first-section" id="getStarted">GET STARTED</Link>
+          </div>
+        </div>
+      </div> */}
+      {/* <div className="backgroundimage grey"></div> */}
+      
+      <h1 id='help'>WE CAN HELP</h1>
+      <div className="columns">
+      
+        <div className="col-text">
+          <h1>New Builds</h1>
+          <p>Enjoy the comfort and efficiency of a brand-new home, tailored to your style and needs. 
+            These homes offer open layouts, smart features, and the latest in energy-saving design. 
+            Casitas offer added flexibility—ideal for guests, rentals, home offices, or multigenerational living.
+          </p>
+          </div>
+        <div className="col-text">
+          <h1>Add-ons</h1>
+          <p> {`Enhance your home with custom add-ons that bring more function, style, and value. 
+            Whether it’s an extra room, expanded patio, or modern upgrades, the right additions 
+            can transform your space to better fit your lifestyle and needs.`}</p>
+        </div>
+        <div className="col-text">
+          <h1>Remodels</h1>
+          <p>{`Breathe new life into your space with a custom remodel. Whether it’s a kitchen refresh, 
+            bathroom upgrade, or full-home transformation, remodeling gives you the chance to modernize,
+            personalize, and make your home truly yours.`}</p>
+        </div>
+      </div>
+      <div className='columns'>
+          <div className='long-image'></div>
+          <div className='short-image'></div>
+        </div>
+        <div className='perks'>
+          <div className='perkBox'>
+            <h3>Full Cost Disclosure</h3>
+            <p>You will know what every trade is going to cost before the build process starts.
+               Allowance items are yours to control.</p>
+          </div>
+          <div className='perkBox'>
+            <h3>Build with your plan</h3>
+            <p>{`Already have the perfect design in mind? We’ll bring it to life. Whether it's a 
+              full set of blueprints or a custom concept, our team works with your plans to
+               create the home you’ve been dreaming of—just the way you envisioned it.`}</p>
+          </div>
+          <div className='perkBox'>
+            <h3>Great Communication</h3>
+            <p>From the first meeting to the final walkthrough, we keep you informed and
+               involved. Clear, consistent communication means no surprises—just confidence, peace of mind, and a smoother building experience.</p>
+          </div>
+        </div>
+        <div className='columns-white'>
+          <div className="column">
+            <h2>The Owners</h2>
+            <div id='short-image-owners'></div>
+          </div>
+          <div className="column">
+            <h2>What people are saying</h2>
+              <TestimonialSlider/>
+          </div>
+        </div>
+
+        <div className='contactForm'>
+          <div className='info'>
+            <h3 id='contact'>Contact Us</h3>
+          <Link className='btmlnk' href="tel:435-668-7774"><BsFillTelephoneFill /> <span>&nbsp;(435) 668 - 7774</span></Link>
+          <Link className='btmlnk' href="mailto:klein.construction.stg@gmail.com"><LuMail /> <span>&nbsp;klein.construction.stg@gmail.com</span></Link>
+          </div>
+          <Contact/>
           
         </div>
-
-
-      </> }
-      <div className="final-text">
-        {selected==="" && <h1 >Recent Work</h1>}
-        <div className="image-gallery" style={{height: selected==="image" ? "calc(50vw + 20px)" : "25vw"}}>
-          <div className="image-gallery-image">
-            <Image src="/images/con6.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/con4.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/con5.jpg" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          {selected ==="image" && <><div className="image-gallery-image">
-            <Image src="/images/kitchen.png" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/kitchen.png" layout="fill" alt="Picture of the cabinets" />
-          </div>
-          <div className="image-gallery-image">
-            <Image src="/images/kitchen.png" layout="fill" alt="Picture of the cabinets" />
-          </div></>}
-        </div>
-        
-        {/*<h1 className="see-more">See more</h1>*/}
-      </div>
-
-      {selected==="" && <div className="final-text">
-      <div className="header-container">
-        <div className="contact-nav">
-          <h2>Get Started</h2>
-          <p>All estimates and consultations are free.</p>
-          <Link href="tel:435-668-7774"><h2 className="number">(435) 668 - 7774</h2></Link>
-          {/*<button className="contact-button">Start Now</button>*/}
-        </div>
-        <div className="header-left-text">
-        <p>Few construction companies are dedicated to the same quality design and superior customer
-service as Klein Cabinets. We care about the quality and class of our builds, and we care about
-your experience throughout the building process.</p>
-        </div>
-        </div>
-        <div className="contact-icons">
-          <Link href="tel:435-668-7774"><BsFillTelephoneFill /> <span>&nbsp;(435) 668 - 7774</span></Link>
-          <Link href="mailto:klein.construction.stg@gmail.com"><LuMail /> <span>&nbsp;klein.construction.stg@gmail.com</span></Link>
-        </div>
-      </div>}
     </main>
   )
 }
